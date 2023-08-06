@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* override browser default */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* use viewport-relative units to cover page fully */
+body {
+    height: 100vh;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto;
+}
+
+/* include border and padding in element width and height */
+* {
+    box-sizing: border-box;
+}

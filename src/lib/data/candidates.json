@@ -1,0 +1,128 @@
+{
+    "candidates": [
+        {
+            "name": "Joe Biden",
+            "party": "Democratic",
+            "current_position": "46th president of the United States",
+            "announcement_date": "April 25, 2023",
+            "past_roles": [
+                {
+                    "role": "Representative for Delaware in the U.S. Senate",
+                    "start_year": 1973,
+                    "end_year": 2009
+                },
+                {
+                    "role": "Vice president under President Barack Obama",
+                    "start_year": 2009,
+                    "end_year": 2017
+                }
+            ],
+            "quote": "I know America. I know we're good and decent people. I know we're still a country that believes in honesty and respect, and treating each other with dignity... And this is our moment.",
+            "key_legislation_or_accomplishments": [
+                "Infrastructure Investment and Jobs Act of 2021",
+                "United States Chips and Science Act",
+                "Inflation Reduction Act of 2022"
+            ],
+            "running_mate_2020": "U.S. Sen. Kamala Harris (D)",
+            "key_policy_points": [
+                "Make childcare and elder care more accessible",
+                "Protect Social Security and Medicare",
+                "Enact a minimum tax for billionaires",
+                "Codify the right to abortion",
+                "Ban assault weapons",
+                "Support voting rights"
+            ],
+            "policy_perspectives": {
+                "leftleaning": "President Joe Biden's re-election platform strongly aligns with progressive values. He is committed to protecting Social Security and Medicare, ensuring that the rich pay their fair share in taxes, and guaranteeing reproductive rights for women, all central tenets of left-leaning philosophy. His proposed ban on assault weapons reflects a necessary response to the current crisis of gun violence. Additionally, Biden's support for climate action and renewable energy investment reflects his alignment with progressive stances on environmental sustainability.",
+                "centrist": "Biden's platform presents a balanced approach that marries progressive ideas with pragmatic policy-making. His commitment to make childcare and elder care more accessible to all Americans is not only socially progressive but also economically sound, and his determination to protect Social Security and Medicare is a testament to his commitment to the well-being of all citizens. His pledge to enact a minimum tax for billionaires signifies a fair tax system. His stance on gun control, while contentious, acknowledges the need for reform amidst increasing gun violence. The focus on manufacturing and job creation is in line with moderate economic principles, supporting both business and worker interests.",
+                "rightleaning": "From a conservative standpoint, Biden's platform might raise concerns about potential overreach in economic and social policy. His plan to impose a minimum tax on billionaires could be seen as detrimental to economic growth and potentially discouraging for entrepreneurs and investors. The proposed ban on assault weapons may be viewed as an infringement on Second Amendment rights. Also, his stance on abortion rights contradicts the pro-life views held by many conservatives. While his commitment to job creation is laudable, concerns may arise over the potential costs and regulations associated with his environmental policies."
+            },
+            "biography": {
+                "birth_year": 1942,
+                "birth_place": "Scranton, Pennsylvania",
+                "education": [
+                    "University of Delaware with a degree in history and political science",
+                    "Law degree from the Syracuse University Law School"
+                ]
+            },
+            "social_media": {
+                "website": "Joe Biden's campaign website",
+                "facebook": "Joe Biden on Facebook",
+                "twitter": "Joe Biden on Twitter",
+                "instagram": "Joe Biden on Instagram",
+                "youtube": "Joe Biden on YouTube"
+            }
+        },
+        {
+            "name": "Donald Trump",
+            "party": "Republican",
+            "current_position": "45th President of the United States",
+            "election_date": "2024",
+            "announcement_date": "November 15, 2022",
+            "past_roles": [
+                {
+                    "role": "45th President of the United States",
+                    "start_year": 2017,
+                    "end_year": 2021
+                },
+                {
+                    "role": "Executive Producer of The Apprentice",
+                    "start_year": 2004,
+                    "end_year": 2015
+                },
+                {
+                    "role": "Reform Party Presidential Candidate",
+                    "start_year": 1999,
+                    "end_year": 2000
+                }
+            ],
+            "quote": "America's comeback starts right now. When I left office, the United States stood ready for its golden age. [...] Now we are a nation in decline. We are a failing nation. For millions of Americans, the past two years under Joe Biden have been a time of pain, hardship, anxiety, and despair.",
+            "key_legislation_or_accomplishments": [
+                "United States withdrawing from the Iran nuclear deal",
+                "Passage of the Tax Cuts and Jobs Act of 2017",
+                "First Step Act in 2018",
+                "Reducing the size of the ISIS caliphate",
+                "Establishing the Space Force as an independent military branch",
+                "More than 200 federal judicial appointments, including three U.S. Supreme Court justices"
+            ],
+            "running_mate_2020": "Not specified",
+            "key_policy_points": [
+                "Rebuild the Greatest Economy in History",
+                "Fair Trade for the American Worker",
+                "Unleash Energy Dominance",
+                "Secure Borders and Reclaim National Sovereignty",
+                "War on the Drug Cartels",
+                "Stop Crime and Restore Safety",
+                "Renew American Strength and Leadership",
+                "Reject Globalism and Embrace Patriotism",
+                "Care For Our Veterans",
+                "Protect Parents’ Rights",
+                "Defend Law and Liberty",
+                "End Censorship and Reclaim Free Speech",
+                "Free, Honest and Lawful Elections",
+                "Drain the Swamp of Washington Corruption",
+                "Better Health Care Choices at Lower Costs"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "Not specified",
+                "centrist": "Not specified",
+                "right_leaning": "Not specified"
+            },
+            "biography": {
+                "birth_year": 1946,
+                "birth_place": "Queens, New York",
+                "education": [
+                    "Fordham University",
+                    "Wharton School of Finance at the University of Pennsylvania"
+                ]
+            },
+            "social_media": {
+                "website": "Not specified",
+                "facebook": "Not specified",
+                "twitter": "Not specified",
+                "instagram": "Not specified",
+                "youtube": "Not specified"
+            }
+        }
+    ]
+}
