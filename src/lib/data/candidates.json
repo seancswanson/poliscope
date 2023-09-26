@@ -1,7 +1,65 @@
 {
     "candidates": [
         {
+            "name": "Robert F. Kennedy Jr.",
+            "slug": "robert-f-kennedy-jr",
+            "party": "Democratic",
+            "current_position": "Author and Lawyer",
+            "announcement_date": "April 5, 2023",
+            "past_roles": [
+                {
+                    "role": "Assistant District Attorney",
+                    "start_year": 1982,
+                    "end_year": 1983
+                },
+                {
+                    "role": "Chief Attorney at Riverkeeper",
+                    "start_year": 1985,
+                    "end_year": 1987
+                },
+                {
+                    "role": "Chairman and Attorney at Waterkeeper Alliance",
+                    "start_year": 1999,
+                    "end_year": 2017
+                }
+            ],
+            "quote": "We will scale down the war machine and bring our resources home. We will rebuild our water systems, repair our roads, modernize our railroads, and clean up our environment...",
+            "key_legislation_or_accomplishments": [],
+            "key_policy_points": [
+                "Increased government transparency and whistleblower protection",
+                "Curb lobbying and the 'revolving door' between government and industry",
+                "Address polarization and foster dialogue",
+                "Transition to clean energy and preserve wild lands",
+                "Economic revitalization focusing on small and medium businesses",
+                "Transition from 'sick care' to 'wellness society'",
+                "End American militaristic policies abroad",
+                "Restore rights and liberties as outlined in the Bill of Rights"
+            ],
+            "policy_perspectives": {
+                "leftleaning": "Kennedy's focus on environmental concerns, social reconciliation, and economic inequality aligns him with progressive values.",
+                "centrist": "Kennedy aims to curb lobbying and protect whistleblowers, which can be seen as non-partisan issues aimed at improving government functionality.",
+                "rightleaning": "Kennedy's criticism of former President Donald Trump's handling of the coronavirus lockdown may resonate with some conservatives who also opposed the lockdowns."
+            },
+            "biography": {
+                "birth_year": 1954,
+                "birth_place": "Washington, D.C.",
+                "education": [
+                    "B.A. in American History and Literature from Harvard University",
+                    "Law Degree from the University of Virginia",
+                    "Master's Degree in Environmental Law from Pace University"
+                ]
+            },
+            "social_media": {
+                "website": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "youtube": ""
+            }
+        },
+        {
             "name": "Joe Biden",
+            "slug": "joe-biden",
             "party": "Democratic",
             "current_position": "46th president of the United States",
             "announcement_date": "April 25, 2023",
@@ -55,6 +113,7 @@
         },
         {
             "name": "Donald Trump",
+            "slug": "donald-trump",
             "party": "Republican",
             "current_position": "45th President of the United States",
             "election_date": "2024",
