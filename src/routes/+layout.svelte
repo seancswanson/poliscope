@@ -2,19 +2,17 @@
 	import '../app.css';
 	import { fade } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
-
 	export let data;
+	import Header from '$lib/components/Header.svelte';
 	$: pathname = data.pathname;
 </script>
 
 <!-- Header -->
-<header class="text-center mb-5">
-	<h1 class="text-3xl font-bold">Poliscope</h1>
-	<p class="text-lg">Your guide to political candidates.</p>
-</header>
+<Header />
 {#key pathname}
 	<main
-		in:fade={{ duration: 3000, delay: 400, easing: cubicOut }}
+		class="max-w-[768px] mx-auto w-3/4"
+		in:fade={{ duration: 300, delay: 300, easing: cubicOut }}
 		out:fade={{ duration: 300, easing: cubicIn }}
 	>
 		<slot />
@@ -22,7 +20,7 @@
 {/key}
 <footer class="text-center mt-10">
 	<p>
-		Contribute to our data: <a href="https://github.com/your-repo" class="text-blue-600"
+		Contribute to our data: <a href="https://github.com/poliscope-svelte" class="text-blue-600"
 			>GitHub Repository</a
 		>
 	</p>

@@ -39,7 +39,7 @@
 	</header>
 
 	<!-- Portrait -->
-	<img class="w-1/2 h-1/2 rounded-full mb-2 mx-auto" src={imgUrl} alt={candidate.name} />
+	<img class="w-1/4 h-1/4 rounded-full mb-2 mx-auto" src={imgUrl} alt={candidate.name} />
 
 	<!-- Quick Facts -->
 	<div class="flex justify-between items-center mb-5">
