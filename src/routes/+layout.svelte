@@ -1,28 +1,28 @@
 <script>
+	import Header from '$lib/components/header/Header.svelte';
+	import Footer from '../lib/components/Footer.svelte';
+
 	import '../app.css';
-	import { fade } from 'svelte/transition';
+	import '../fonts.css';
+
+	import { fly } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
+
 	export let data;
-	import Header from '$lib/components/Header.svelte';
 	$: pathname = data.pathname;
 </script>
 
-<!-- Header -->
-<Header />
-{#key pathname}
-	<main
-		class="max-w-[768px] mx-auto w-3/4"
-		in:fade={{ duration: 300, delay: 300, easing: cubicOut }}
-		out:fade={{ duration: 300, easing: cubicIn }}
-	>
-		<slot />
-	</main>
-{/key}
-<footer class="text-center mt-10">
-	<p>
-		Contribute to our data: <a href="https://github.com/poliscope-svelte" class="text-blue-600"
-			>GitHub Repository</a
+<div class="page-wrapper h-full grid grid-rows-[auto,auto,1fr,auto]">
+	<!-- Header -->
+	<Header />
+	{#key pathname}
+		<main
+			class="max-w-[768px] mx-auto z-0 px-2"
+			in:fly={{ easing: cubicOut, y: 10, duration: 300, delay: 400 }}
+			out:fly={{ easing: cubicIn, y: -10, duration: 300 }}
 		>
-	</p>
-	<p>Made with ♡ by <a href="seancswanson.com">Sean Swanson</a></p>
-</footer>
+			<slot />
+		</main>
+	{/key}
+	<Footer />
+</div>
