@@ -90,15 +90,16 @@
 	<!-- Social Media Links -->
 	<section class="mb-5">
 		<h2 class="text-2xl">Connect</h2>
-		<ul>
+		<ul class="flex gap-2">
 			{#each Object.entries(candidate.social_media) as [platform, link]}
-				<li><a href={link}>{platform}</a></li>
+				<!-- only render if there is a link and show an icon -->
+				{#if link}
+					<!-- capitalize first letter of platform -->
+					<li><a href={link}>{platform[0].toUpperCase() + platform.slice(1)}</a></li>
+				{/if}
 			{/each}
 		</ul>
 	</section>
 
-	<!-- Footer -->
-	<footer>
-		<p>Back to <a href="/">Home</a></p>
-	</footer>
+	<p>Back to <a href="/">Home</a></p>
 </div>
