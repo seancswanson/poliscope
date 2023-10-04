@@ -14,14 +14,18 @@
 			.length,
 		republican: candidates.candidates.filter((candidate) => candidate.party === 'Republican')
 			.length,
-		independent: candidates.candidates.filter((candidate) => candidate.party === 'Independent')
-			.length
+		independent: candidates.candidates.filter(
+			(candidate) => candidate.party == 'Independent' || candidate.party == 'Green'
+		).length
 	};
+	const politicalParties = candidates.candidates
+		.map((candidate) => candidate.party)
+		.filter((value, index, self) => self.indexOf(value) === index);
 	const numberParties = candidates.candidates
 		.map((candidate) => candidate.party)
 		.filter((value, index, self) => self.indexOf(value) === index).length;
 	const searchStore = createSearchStore(searchCandidates);
-	import { fade, scale } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	const latestDataDate = new Date(candidates.latest_data_date);
 	const formattedDate = new Intl.DateTimeFormat('en-US', {
@@ -40,9 +44,9 @@
 	across <span class="font-bold">{numberParties}</span> parties:
 </h2>
 <div class="candidate-number-pills flex gap-2 justify-center mb-5">
-	<PartyInfoPill count={numberCandidates.democratic} party="Democratic" color="blue" />
-	<PartyInfoPill count={numberCandidates.republican} party="Repbulican" color="red" />
-	<PartyInfoPill count={numberCandidates.independent} party="Independent" color="gray" />
+	<PartyInfoPill count={numberCandidates.democratic} party="Democratic" />
+	<PartyInfoPill count={numberCandidates.republican} party="Republican" />
+	<PartyInfoPill count={numberCandidates.independent} party="Independent" />
 </div>
 <p class="italic text-center text-xs">Click on a candidate below to learn more</p>
 
@@ -87,8 +91,9 @@
 						bind:value={selectedParty}
 					>
 						<option>All</option>
-						<option>Democratic</option>
-						<option>Republican</option>
+						{#each politicalParties as party}
+							<option>{party}</option>
+						{/each}
 					</select>
 				</div>
 				<div class="search">
@@ -104,28 +109,29 @@
 		</div>
 	</div>
 {/if}
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
 	{#each $searchStore.data as candidate}
-		<!-- convert candidate name to kebab case -->
 		{@const slug = candidate.name.replace(/\s+/g, '-').replace(/\./g, '').toLowerCase()}
 		{@const imgUrl = `/portraits/${candidate.slug}-square.webp`}
-		<!-- create partycolor const with blue, red, and gray as the options -->
-		{@const partyColor =
-			candidate.party === 'Democratic' ? 'blue' : candidate.party === 'Republican' ? 'red' : 'gray'}
+		{@const borderColor =
+			candidate.party === 'Democratic'
+				? 'border-r-blue-400'
+				: candidate.party === 'Republican'
+				? 'border-r-red-400'
+				: 'border-r-gray-400'}
 		<a href={`/${slug}`} class="bg-white shadow candidate p-4 border rounded relative">
 			<div
-				class={`corner-tag rounded-tr-sm  absolute top-0 right-0 w-0 h-0
-  border-t-[0] border-t-transparent
-  border-r-[45px] border-r-${partyColor}-500
-  border-b-[45px] border-b-transparent`}
+				class={`corner-tag rounded-tr-sm absolute top-0 right-0 w-0 h-0 border-t-[0] border-t-transparent border-r-[45px] ${borderColor} border-b-[45px] border-b-transparent`}
 			/>
+
 			<div
-				class={`absolute top-1 text-sm font-bold right-2 text-white font-['AuthenticSansCondensed']`}
+				class="absolute top-1 text-sm font-bold right-2 text-white font-['AuthenticSansCondensed']"
 			>
 				{candidate.party[0]}
 			</div>
-			<img class="w-12 h-12 rounded-full mb-2" src={imgUrl} alt={candidate.name} />
+			<img class="w-12 h-12 rounded-sm mb-2" src={imgUrl} alt={candidate.name} />
 			<h2 class="text-xl font-medium">{candidate.name}</h2>
+			<p class="text-sm">{candidate.current_position}</p>
 		</a>
 	{/each}
 </div>
