@@ -1,0 +1,61 @@
+/* Regular fonts */
+@font-face {
+	font-family: 'AuthenticSans';
+	src: url('/fonts/authentic-sans/AUTHENTICSans-60.woff2') format('woff2'),
+		url('/fonts/authentic-sans/AUTHENTICSans-60.woff') format('woff');
+	font-weight: 300;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'AuthenticSans';
+	src: url('/fonts/authentic-sans/AUTHENTICSans-90.woff2') format('woff2'),
+		url('/fonts/authentic-sans/AUTHENTICSans-90.woff') format('woff');
+	font-weight: 400;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'AuthenticSans';
+	src: url('/fonts/authentic-sans/AUTHENTICSans-130.woff2') format('woff2'),
+		url('/fonts/authentic-sans/AUTHENTICSans-130.woff') format('woff');
+	font-weight: 600;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'AuthenticSans';
+	src: url('/fonts/authentic-sans/AUTHENTICSans-150.woff2') format('woff2'),
+		url('/fonts/authentic-sans/AUTHENTICSans-150.woff') format('woff');
+	font-weight: 700;
+	font-stretch: normal;
+}
+
+/* Condensed fonts */
+@font-face {
+	font-family: 'AuthenticSansCondensed';
+	src: url('/fonts/authentic-sans/AUTHENTICSans-Condensed-60.woff2') format('woff2'),
+		url('/fonts/authentic-sans/AUTHENTICSans-Condensed-60.woff') format('woff');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'AuthenticSansCondensed';
+	src: url('/fonts/authentic-sans/AUTHENTICSans-Condensed-90.woff2') format('woff2'),
+		url('/fonts/authentic-sans/AUTHENTICSans-Condensed-90.woff') format('woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'AuthenticSansCondensed';
+	src: url('/fonts/authentic-sans/AUTHENTICSans-Condensed-130.woff2') format('woff2'),
+		url('/fonts/authentic-sans/AUTHENTICSans-Condensed-130.woff') format('woff');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'AuthenticSansCondensed';
+	src: url('/fonts/authentic-sans/AUTHENTICSans-Condensed-150.woff2') format('woff2'),
+		url('/fonts/authentic-sans/AUTHENTICSans-Condensed-150.woff') format('woff');
+	font-weight: 700;
+}
