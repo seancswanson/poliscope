@@ -45,10 +45,7 @@
 				<LogoAndName />
 				<nav class="flex gap-2">
 					{#each navItems as navItem (navItem.path)}
-						<a
-							class="text-lg px-2 font-['AuthenticSansCondensed'] tracking-wide"
-							href={navItem.path}>{navItem.label}</a
-						>
+						<a class="text-lg px-2" href={navItem.path}>{navItem.label}</a>
 					{/each}
 				</nav>
 			</div>
