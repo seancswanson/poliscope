@@ -51,12 +51,11 @@
 <p class="italic text-center text-xs">Click on a candidate below to learn more</p>
 
 <div class="filter-bar flex justify-end mb-2">
-	<button
-		on:click={() => (filterVisible = true)}
-		class={`p-1 ${
-			filterVisible ? 'border-black' : 'border-transparent'
-		} border-2  transition-all ease-in-out`}
-		><img src="$lib/assets/filter.png" class="w-6" /></button
+	<button on:click={() => (filterVisible = true)} class={``}
+		><img
+			src="$lib/assets/filter.png"
+			class={`border-black border-2  transition-all ease-in-out shadow-neo w-8 p-1`}
+		/></button
 	>
 </div>
 {#if filterVisible}
@@ -75,7 +74,7 @@
 			transition:fade={{ delay: 25, duration: 150, easing: quintOut }}
 		/>
 		<div
-			class="wrapper rounded shadow absolute top-0 right-0 flex flex-col items-start bg-white text-black"
+			class="wrapper rounded border border-black shadow absolute shadow-neo top-0 right-0 flex flex-col items-start bg-white text-black"
 		>
 			<div
 				class="top-bar py-1 uppercase rounded-t w-full font-['AuthenticSansCondensed'] text-center bg-gray-300"
@@ -119,7 +118,10 @@
 				: candidate.party === 'Republican'
 				? 'border-r-red-400'
 				: 'border-r-gray-400'}
-		<a href={`/${slug}`} class="bg-white shadow candidate p-4 border rounded relative">
+		<a
+			href={`/${slug}`}
+			class="bg-white flex flex-col justify-center items-center text-center cursor-pointer candidate p-4 border border-black shadow-neo rounded relative"
+		>
 			<div
 				class={`corner-tag rounded-tr-sm absolute top-0 right-0 w-0 h-0 border-t-[0] border-t-transparent border-r-[45px] ${borderColor} border-b-[45px] border-b-transparent`}
 			/>
@@ -129,7 +131,7 @@
 			>
 				{candidate.party[0]}
 			</div>
-			<img class="w-12 h-12 rounded-sm mb-2" src={imgUrl} alt={candidate.name} />
+			<img class="w-24 h-24 rounded-sm mb-2" src={imgUrl} alt={candidate.name} />
 			<h2 class="text-xl font-medium">{candidate.name}</h2>
 			<p class="text-sm">{candidate.current_position}</p>
 		</a>
@@ -147,6 +149,6 @@
 		position: fixed;
 		inset: 0;
 
-		background: rgba(0, 0, 0, 0.3);
+		background: rgba(0, 0, 0, 0.7);
 	}
 </style>

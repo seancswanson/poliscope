@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class={`candidate-number-block flex gap-2 font-['AuthenticSansCondensed'] rounded-full border-2 ${borderColor} px-2`}
+	class={`candidate-number-block flex gap-2 font-['AuthenticSansCondensed'] rounded-full border-2 ${borderColor} px-2 shadow-neo`}
 >
 	<div class="number">{count}</div>
 	<div class="label">{party}</div>
