@@ -37,7 +37,7 @@
 </script>
 
 <a href="/candidates" class="text-blue-500 hover:underline mb-2">← Back to candidates</a>
-<div class="container mx-auto p-6 bg-white shadow-md rounded-lg">
+<div class="container mx-auto p-6 bg-white shadow-md rounded">
 	<!-- Header -->
 	<header class="text-center mb-8">
 		<h1 class="text-4xl font-extrabold">{candidate.name}</h1>
@@ -82,15 +82,15 @@
 			</div>
 			<div>
 				<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-					<div class="bg-gray-100 p-4 rounded-lg">
+					<div class="bg-gray-100 p-4 rounded">
 						<h3 class="font-[600] text-xl mb-3">Left Leaning</h3>
 						<p>{candidate.policy_perspectives.left_leaning}</p>
 					</div>
-					<div class="bg-gray-100 p-4 rounded-lg">
+					<div class="bg-gray-100 p-4 rounded">
 						<h3 class="font-[600] text-xl mb-3">Centrist</h3>
 						<p>{candidate.policy_perspectives.centrist}</p>
 					</div>
-					<div class="bg-gray-100 p-4 rounded-lg">
+					<div class="bg-gray-100 p-4 rounded">
 						<h3 class="font-[600] text-xl mb-3">Right Leaning</h3>
 						<p>{candidate.policy_perspectives.right_leaning}</p>
 					</div>

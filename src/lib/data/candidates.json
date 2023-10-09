@@ -42,6 +42,375 @@
             }
         },
         {
+            "name": "Doug Burgum",
+            "slug": "doug-burgum",
+            "party": "Republican",
+            "current_position": "Governor of North Dakota",
+            "announcement_date": "2023-06-07",
+            "election_date": "2024-11-05",
+            "past_roles": [
+                {
+                    "role": "Founder, Great Plains Software",
+                    "start_year": 1983,
+                    "end_year": 2001
+                },
+                {
+                    "role": "Senior Vice President, Microsoft",
+                    "start_year": 2001,
+                    "end_year": 2007
+                },
+                {
+                    "role": "Governor of North Dakota",
+                    "start_year": 2016,
+                    "end_year": 2023
+                }
+            ],
+            "quote": "We need someone in the White House with small-town values who understands how real Americans get up every morning to put food on the table.",
+            "key_legislation_or_accomplishments": [
+                "Re-election as Governor in 2020"
+            ],
+            "key_policy_points": [
+                "Cut taxes",
+                "Reduce inflation and cost of living",
+                "Increase domestic energy production"
+            ],
+            "policy_perspectives": {
+                "right_leaning": "From a conservative viewpoint, Doug Burgum's policies on tax cuts and reduced government spending are likely to resonate well. His emphasis on domestic energy production aligns with nationalistic ideals and economic self-sufficiency. Burgum's decentralization policies for healthcare and education could be seen as empowering local communities and reducing federal overreach. His background in both business and governance may make him an appealing candidate for those who value practical experience in leadership roles.",
+                "centrist": "Burgum's policy priorities of cutting taxes and focusing on the economy could appeal to a wide swath of voters, including centrists who are concerned about fiscal responsibility. His background as a successful entrepreneur and governor of a small-population state gives him a unique, practical perspective on governance. While he advocates for less federal involvement in sectors like healthcare and education, his re-election as Governor suggests a degree of bipartisan appeal.",
+                "left_leaning": "Doug Burgum appears to be a traditional conservative, advocating for tax cuts and reduced government intervention—stances often criticized by progressives as benefiting the wealthy at the expense of social welfare programs. His emphasis on increasing domestic energy production may raise environmental concerns, particularly if it involves fossil fuels. Burgum's views on healthcare and education seem to favor decentralization, which critics argue could lead to inequality in service provision."
+            },
+            "biography": {
+                "birth_year": 1956,
+                "birth_place": "Arthur, North Dakota",
+                "education": [
+                    "North Dakota State University, Bachelors",
+                    "Stanford University, MBA"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
+            "name": "Ron DeSantis",
+            "slug": "ron-desantis",
+            "party": "Republican",
+            "current_position": "Governor of Florida",
+            "announcement_date": "May 24, 2023",
+            "past_roles": [
+                {
+                    "role": "U.S. Navy Officer",
+                    "start_year": 2004,
+                    "end_year": 2010
+                },
+                {
+                    "role": "U.S. House of Representatives",
+                    "start_year": 2012,
+                    "end_year": 2018
+                }
+            ],
+            "quote": "Our border is a disaster, crime infests our cities, the federal government makes it harder for families to make ends meet, and the president flounders. But decline is a choice, success is attainable, and freedom is worth fighting for.",
+            "key_legislation_or_accomplishments": [
+                "Legislation 1",
+                "Legislation 2"
+            ],
+            "running_mate_2024": "To be determined",
+            "key_policy_points": [
+                "Reduce government spending and inflation",
+                "Increase security at the U.S.-Mexico border",
+                "Support funding for law enforcement",
+                "Increase domestic energy production",
+                "Reduce the authority of the administrative state",
+                "Re-establish integrity in our institutions"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "The candidate's policy agenda leans heavily conservative and seems disconnected from the needs of vulnerable populations. The focus on deregulation and economic freedom might exacerbate income inequality and favor corporations over workers. Their immigration stance appears exclusionary and sidesteps the humanitarian aspects of the issue. Their aggressive approach to combatting cartels is a potentially militaristic solution to a complex problem that also requires social and economic interventions.",
+                "centrist": "The candidate has a mixed bag of policies that could attract a wide range of voters, depending on the details. The commitment to economic growth and the desire to reduce federal spending could appeal to fiscal conservatives and some moderates, but the lack of details raises questions. Their strong focus on border security could resonate with those concerned about national security, but more information is needed on how this will be balanced against trade, economic factors, and humanitarian concerns. Their comprehensive plan to fight cartels is commendable but raises questions about diplomatic relations.",
+                "right_leaning": "This candidate shows strong leadership with a clear vision for restoring American prosperity and security. Their commitment to economic freedom and limited government aligns closely with conservative principles. The candidate's tough stance on immigration reform, border security, and dealing with cartels suggests a decisive approach to tackling these issues. The focus on military readiness and opposition to \"woke\" agendas within the armed forces would likely be viewed as a welcome return to core values."
+            },
+            "biography": {
+                "birth_year": 1978,
+                "birth_place": "Jacksonville, Fla.",
+                "education": [
+                    "Yale University",
+                    "Harvard Law School"
+                ]
+            },
+            "social_media": {
+                "website": "Website Here",
+                "facebook": "Facebook Here",
+                "twitter": "Twitter Here",
+                "instagram": "Instagram Here",
+                "youtube": "YouTube Here"
+            }
+        },
+        {
+            "name": "Asa Hutchinson",
+            "slug": "asa-hutchinson",
+            "party": "Republican",
+            "current_position": "Running for President of the United States",
+            "announcement_date": "April 2, 2023",
+            "past_roles": [
+                {
+                    "role": "Governor of Arkansas",
+                    "start_year": 2015,
+                    "end_year": 2023
+                },
+                {
+                    "role": "U.S. Representative for Arkansas' 3rd Congressional District",
+                    "start_year": 1997,
+                    "end_year": 2001
+                },
+                {
+                    "role": "Undersecretary for Border and Transportation Security, U.S. Department of Homeland Security",
+                    "start_year": 2003,
+                    "end_year": 2005
+                },
+                {
+                    "role": "Director of the Drug Enforcement Administration",
+                    "start_year": 2001,
+                    "end_year": 2003
+                }
+            ],
+            "quote": "N/A",
+            "key_legislation_or_accomplishments": [
+                "N/A"
+            ],
+            "running_mate_2024": "N/A",
+            "key_policy_points": [
+                "Tax Cut",
+                "Government Transformation",
+                "Teacher Pay",
+                "Ethics Reform",
+                "Infrastructure"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "From a left-leaning perspective, Asa Hutchinson may be seen as a traditional Republican with stances that prioritize conservative fiscal policies, such as tax cuts, over social welfare programs. His plans to continue tax cuts might be criticized for benefiting the wealthy at the expense of crucial social services. His government transformation initiatives might be seen as a guise for reducing the scope and efficacy of government, which could harm vulnerable populations. While his proposal to raise teacher salaries is a positive step, it may not be seen as going far enough to address the systemic issues facing education. Ethics and infrastructure plans may be lauded, but could also be seen as relatively safe issues that don't address deeper structural inequalities.",
+                "centrist": "Asa Hutchinson may appeal to centrists as a pragmatic politician who focuses on good governance, fiscal responsibility, and ethical integrity. His tax policies aim to simplify the tax code and increase fairness, while his plan to streamline government could make it more efficient and cost-effective. The proposal to raise teacher pay and invest in infrastructure are broadly popular initiatives that many can get behind, regardless of political leaning. His focus on ethics reform might be seen as a nod to restoring faith in public institutions, a concern shared by many Americans.",
+                "right_leaning": "From a right-leaning viewpoint, Hutchinson could be seen as a strong candidate who aligns well with conservative values, particularly with his emphasis on tax cuts and small government. His plan to simplify the tax code and reduce the number of agencies reporting to the governor aligns with the conservative principles of lower taxes and less bureaucracy. His focus on ethics reform might be welcomed as a way to 'drain the swamp,' while his plans for teacher pay and infrastructure might be seen as targeted and fiscally responsible approaches to solving real-world issues, rather than expanding government reach."
+            },
+            "biography": {
+                "birth_year": 1950,
+                "birth_place": "Bentonville, Arkansas",
+                "education": [
+                    "B.S. in accounting from Bob Jones University, 1972",
+                    "J.D. from the University of Arkansas School of Law, 1975"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
+            "name": "William Hurd",
+            "slug": "william-hurd",
+            "party": "Republican",
+            "current_position": "Running for President of the United States",
+            "announcement_date": "June 22, 2023",
+            "past_roles": [
+                {
+                    "role": "U.S. Representative for Texas' 23rd Congressional District",
+                    "start_year": 2015,
+                    "end_year": 2021
+                },
+                {
+                    "role": "Central Intelligence Agency Officer",
+                    "start_year": 2000,
+                    "end_year": 2009
+                }
+            ],
+            "quote": "N/A",
+            "key_legislation_or_accomplishments": [
+                "N/A"
+            ],
+            "running_mate_2024": "N/A",
+            "key_policy_points": [
+                "Border Security",
+                "Immigration",
+                "National Security",
+                "Trade",
+                "Economy & Taxes",
+                "Veterans",
+                "Education"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "Will Hurd's policies may appear to some as more moderate than those of other Republicans, particularly on issues like immigration and border security. However, critics on the left might argue that his approach still falls short of comprehensive immigration reform and doesn't adequately address social justice concerns. His focus on intelligence-led border security might be seen as a softer but still problematic alternative to a border wall. On the economy, his tax policies and deregulatory measures may be perceived as benefiting corporations and the wealthy at the expense of middle and working-class families. His stance on veterans and education, while laudable, doesn't fundamentally challenge the issues these sectors face, such as a lack of adequate funding or systemic inequality.",
+                "centrist": "Will Hurd presents himself as a pragmatic and solutions-oriented candidate, focusing on bipartisan efforts and practicality. His intelligence background lends him credibility on national security issues, and his moderate stance on immigration could appeal to voters who are looking for a balanced approach. In terms of trade and the economy, Hurd is pro-business but also emphasizes the importance of international partnerships, something centrists may find appealing. His focus on veterans and education seems aimed at creating practical solutions to ongoing problems rather than ideological stances.",
+                "right_leaning": "Conservatives might appreciate Will Hurd's commitment to national security, drawing from his CIA experience. His approach to border security, although not as hardline as some would prefer, emphasizes effectiveness and the use of technology, which can be seen as a rational approach to a complex problem. Hurd's economic policies are in line with traditional Republican values like low taxes and deregulation, aimed at fostering business growth and individual prosperity. However, some conservatives might question his willingness to work across the aisle on issues like immigration, seeing it as a compromise on conservative principles."
+            },
+            "biography": {
+                "birth_year": "1977",
+                "birth_place": "San Antonio, Texas",
+                "education": [
+                    "B.S. from Texas A&M University"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
+            "name": "Larry Elder",
+            "slug": "larry-elder",
+            "party": "Republican",
+            "current_position": "Talk Radio Host",
+            "announcement_date": "April 20, 2023",
+            "past_roles": [
+                {
+                    "role": "Talk Radio Host",
+                    "start_year": 1994,
+                    "end_year": 2022
+                },
+                {
+                    "role": "Lawyer in Private Practice",
+                    "start_year": 1970,
+                    "end_year": 1980
+                }
+            ],
+            "quote": "America is in decline, but this decline is not inevitable. It is a choice made by detached and cynical politicians. As a California resident, I’ve seen firsthand how decades of Democrat rule have turned the Golden State, for many, into an unaffordable dystopia. I won’t let them do the same to America. We can enter a new American Golden Age, but we must choose a leader who can bring us there. That’s why I’m running for President.",
+            "key_legislation_or_accomplishments": [
+                "N/A"
+            ],
+            "running_mate_2024": "N/A",
+            "key_policy_points": [
+                "Support for Law Enforcement",
+                "Increasing Security at U.S.-Mexico Border",
+                "Producing More Energy in America"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "From a left-leaning perspective, Larry Elder represents a regressive approach to America's problems, with policies that could exacerbate social and economic inequality. His support for law enforcement and opposition to social welfare programs may come across as lacking compassion for marginalized communities. His focus on \"personal responsibility\" may ignore systemic issues that create obstacles for certain groups. Moreover, his skepticism about systemic racism and his opposition to CRT (Critical Race Theory) could be viewed as an attempt to overlook or diminish the very real challenges tied to racial inequity in America.",
+                "centrist": "Larry Elder is a highly polarizing figure whose policies appeal to a specific ideological base. While his fiscal conservatism might be attractive to some, his views on social issues, systemic racism, and welfare could alienate many moderates. Elder's emphasis on law and order might resonate with those concerned about crime rates, but his stances seem to lack nuance. His experience in media and law could be seen as valuable or as a limitation, given the lack of legislative or executive governance on his resume.",
+                "right_leaning": "From a right-leaning viewpoint, Larry Elder is a strong candidate who focuses on key conservative issues like individual liberty, national security, and economic growth. His commitment to law enforcement, school choice, and anti-welfare sentiments might be viewed as much-needed common sense in an era of left-leaning social policies. Elder's stance against Critical Race Theory is likely seen as a defense of traditional American values. His focus on containing China and securing the U.S.-Mexico border speaks to those who are concerned about America's standing and security on the global stage."
+            },
+            "biography": {
+                "birth_year": 1952,
+                "birth_place": "Los Angeles, California",
+                "education": [
+                    "Bachelor's degree in Political Science from Brown University",
+                    "Law degree from the University of Michigan School of Law"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
+            "name": "Ryan Binkley",
+            "slug": "ryan-binkley",
+            "party": "Republican",
+            "current_position": "Businessman and Pastor",
+            "announcement_date": "4/23/23",
+            "past_roles": [
+                {
+                    "role": "President and Chief Executive Officer at Generational Group",
+                    "start_year": 2005,
+                    "end_year": 2023
+                },
+                {
+                    "role": "Employee at Proctor & Gamble",
+                    "start_year": null,
+                    "end_year": null
+                },
+                {
+                    "role": "Employee at Boston Scientific Corporation",
+                    "start_year": null,
+                    "end_year": null
+                }
+            ],
+            "quote": "The problems we face, and the blame we lay, can all be rectified if we look to God, find the good in our fellow Americans, and resolve to trust each other one more time.",
+            "key_legislation_or_accomplishments": [],
+            "running_mate_2024": null,
+            "key_policy_points": [
+                "Reducing national debt",
+                "Reducing healthcare costs",
+                "Addressing immigration",
+                "Increasing community involvement in education",
+                "Unity"
+            ],
+            "policy_perspectives": {
+                "centrist": "From a centrist viewpoint, Ryan Binkley may offer some appealing aspects. His emphasis on unity and bipartisan solutions could resonate with voters tired of political polarization. His background in business may indicate a pragmatic approach to economic issues, while his pastoral work suggests a moral compass that could guide his policy decisions. However, centrists might want to see more specifics on how he plans to accomplish his broad goals, like healthcare reform and debt reduction.",
+                "left_leaning": "Ryan Binkley's policies may not sit well with left-leaning voters, particularly given his focus on reducing federal spending to tackle the national debt and his desire to increase border security. His stance on promoting a \"culture of life\" is likely to be interpreted as anti-abortion, which is generally contrary to left-wing ideologies. Furthermore, Binkley's focus on religious themes and unity through God may raise church-state separation concerns for some progressive voters.",
+                "right_leaning": "Right-leaning voters are likely to find Binkley's policies appealing. His focus on reducing the national debt, lowering healthcare costs, and enhancing border security aligns well with conservative economic and security concerns. His religious background and emphasis on community involvement in education could resonate well with socially conservative voters. The candidate's commitment to an \"All of the Above\" energy strategy may also attract those who support American energy independence."
+            },
+            "biography": {
+                "birth_year": 1967,
+                "birth_place": "Columbus, Georgia",
+                "education": [
+                    "Bachelor's degree in Finance and Marketing from Texas McCombs School of Business, 1990",
+                    "Master's degree in Business Administration and Management from Southern Methodist University, 2005"
+                ]
+            },
+            "social_media": {
+                "website": "www.google.com",
+                "facebook": null,
+                "twitter": null,
+                "instagram": null,
+                "youtube": null
+            }
+        },
+        {
+            "name": "Chris Christie",
+            "slug": "chris-christie",
+            "party": "Republican",
+            "current_position": "Former Governor of New Jersey",
+            "announcement_date": "June 6, 2023",
+            "past_roles": [
+                {
+                    "role": "Governor of New Jersey",
+                    "start_year": 2010,
+                    "end_year": 2018
+                },
+                {
+                    "role": "U.S. Attorney for New Jersey",
+                    "start_year": 2002,
+                    "end_year": 2009
+                }
+            ],
+            "quote": "I’m running for President of the United States because the truth still matters. We need leaders that are willing to stand up and tell it like it is.",
+            "key_legislation_or_accomplishments": [],
+            "running_mate_2024": "",
+            "key_policy_points": [
+                "Criticism of former President Donald Trump",
+                "Leadership and telling the truth"
+            ],
+            "policy_perspectives": {
+                "centrist": "Chris Christie seems to be positioning himself as a reasonable conservative, emphasizing truth and leadership. His vocal criticism of Donald Trump indicates a willingness to stand against prevailing winds within his party, which might resonate with voters who are disenchanted with extreme partisanship. However, his track record as Governor of New Jersey shows him to be a mostly traditional conservative, meaning centrists should weigh his more moderate rhetoric against his actual policy history.",
+                "left_leaning": "Chris Christie presents himself as a critic of Donald Trump, but progressive voters should not forget his conservative tenure as Governor of New Jersey. His focus on \"the truth\" might seem like a nod to bipartisanship, but his previous policy decisions and political stances, including his endorsement of Trump in 2016, suggest a more complex picture. Left-leaning voters might find his criticism of Trump appealing but insufficient for building a broad-based coalition for change.",
+                "right_leaning": "While Chris Christie criticizes Donald Trump, it's essential to remember that he has a robust conservative background, including his time as Governor of New Jersey. He has experience in leadership roles and is not a newcomer to the national stage. His anti-Trump stance could be seen as a strategic differentiation in a crowded field or as a genuine concern for the direction of the party. However, his criticism of a still-popular figure in Republican circles might alienate core GOP voters."
+            },
+            "biography": {
+                "birth_year": 1962,
+                "birth_place": "Newark, New Jersey",
+                "education": [
+                    "Political Science Undergraduate",
+                    "J.D. in Law"
+                ]
+            },
+            "social_media": {
+                "website": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "youtube": ""
+            }
+        },
+        {
             "name": "Cornel West",
             "slug": "cornel-west",
             "party": "Green",
