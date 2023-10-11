@@ -210,6 +210,56 @@
             }
         },
         {
+            "name": "Perry Johnson",
+            "slug": "perry-johnson",
+            "party": "Republican",
+            "current_position": "Businessman and Author",
+            "announcement_date": "March 2, 2023",
+            "past_roles": [
+                {
+                    "role": "Businessman and Author",
+                    "start_year": "N/A",
+                    "end_year": "N/A"
+                }
+            ],
+            "quote": "I'm a guy that started with nothing, & ended up with the most perfect life on the planet. I lived the American dream, & I want to keep that American dream alive. To do that, obviously, we need to change things.",
+            "key_legislation_or_accomplishments": [
+                "N/A"
+            ],
+            "running_mate_2024": "N/A",
+            "key_policy_points": [
+                "Two-Cents Plan",
+                "Inflation",
+                "Energy",
+                "Border Security",
+                "Fentanyl Crisis",
+                "Social Security & Medicare",
+                "Simplifying the Tax Code",
+                "National Security",
+                "Education",
+                "Department of Justice & FBI"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "Individuals with a left-leaning perspective may strongly disagree with Perry Johnson's campaign, particularly on issues like border security and fiscal conservatism. They may argue that Johnson's focus on reducing government spending and implementing austerity measures might lead to cutbacks in social programs that many Americans rely on. Furthermore, they might consider his emphasis on \"pro-life, pro-second amendment\" values as exclusionary and not aligned with progressive social values. His approach to energy, particularly his support for fossil fuels, could also be viewed as an environmental concern. Overall, those on the left may believe that Johnson's policies lack empathy and adequate consideration for social justice and climate change.",
+                "centrist": "From a centrist perspective, Perry Johnson could be seen as someone who brings a pragmatic blend of policies to the table. His focus on fiscal responsibility, reducing the deficit, and controlling inflation could be interpreted as a balanced approach to economic stability. However, his willingness to continue using fossil fuels might be seen as a practical middle ground between rapid climate action and economic considerations. Centrists may appreciate that he acknowledges the challenges at the southern border, but they might hope that he pairs this with a humane immigration policy. Overall, centrists might see Johnson as someone who combines elements of both conservative and liberal policies, although some may question if he leans too far to the right to truly be considered centrist.",
+                "right_leaning": "Supporters from the right are likely to appreciate Perry Johnson's focus on traditional conservative values, such as limited government, strong national security, and personal freedoms. His \"Two Cents Plan\" and his goal to simplify the tax code would resonate well with those who prioritize fiscal conservatism. Additionally, his pro-life and pro-second amendment stances would likely garner strong support from social conservatives. His policies on border security and national debt may also appeal to those concerned about American sovereignty and fiscal health. Overall, his platform would probably be seen as a strong representation of conservative values and aims to restore what some on the right may consider \"common-sense governance.\""
+            },
+            "biography": {
+                "birth_year": "N/A",
+                "birth_place": "Dolton, Illinois",
+                "education": [
+                    "Bachelor's degree in mathematics from the University of Illinois at Urbana-Champaign"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
             "name": "William Hurd",
             "slug": "william-hurd",
             "party": "Republican",
@@ -414,7 +464,7 @@
             "name": "Cornel West",
             "slug": "cornel-west",
             "party": "Green",
-            "current_position": "Dietrich Bonhoeffer Chair at Union Theological Seminary, Academic, Activist",
+            "current_position": "Philosopher/Political Activist/Social critic",
             "announcement_date": "June 5, 2023",
             "past_roles": [
                 {
@@ -468,7 +518,7 @@
         {
             "name": "Robert F. Kennedy Jr.",
             "slug": "robert-f-kennedy-jr",
-            "party": "Democratic",
+            "party": "Independent",
             "current_position": "Author and Lawyer",
             "announcement_date": "April 5, 2023",
             "past_roles": [

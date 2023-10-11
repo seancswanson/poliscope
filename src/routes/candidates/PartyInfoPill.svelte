@@ -7,6 +7,8 @@
 			? 'border-blue-300'
 			: party === 'Republican'
 			? 'border-red-300'
+			: party === 'Green'
+			? 'border-green-300'
 			: 'border-gray-300';
 </script>
 

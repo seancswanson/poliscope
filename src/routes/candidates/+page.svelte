@@ -1,4 +1,6 @@
 <script lang="ts">
+	import CandidateCard from './CandidateCard.svelte';
+
 	import PartyInfoPill from './PartyInfoPill.svelte';
 
 	import candidates from '$lib/data/candidates.json';
@@ -14,9 +16,9 @@
 			.length,
 		republican: candidates.candidates.filter((candidate) => candidate.party === 'Republican')
 			.length,
-		independent: candidates.candidates.filter(
-			(candidate) => candidate.party == 'Independent' || candidate.party == 'Green'
-		).length
+		independent: candidates.candidates.filter((candidate) => candidate.party == 'Independent')
+			.length,
+		green: candidates.candidates.filter((candidate) => candidate.party === 'Green').length
 	};
 	const politicalParties = candidates.candidates
 		.map((candidate) => candidate.party)
@@ -47,6 +49,7 @@
 	<PartyInfoPill count={numberCandidates.democratic} party="Democratic" />
 	<PartyInfoPill count={numberCandidates.republican} party="Republican" />
 	<PartyInfoPill count={numberCandidates.independent} party="Independent" />
+	<PartyInfoPill count={numberCandidates.green} party="Green" />
 </div>
 <p class="italic text-center text-xs">Click on a candidate below to learn more</p>
 
@@ -74,7 +77,7 @@
 			transition:fade={{ delay: 25, duration: 150, easing: quintOut }}
 		/>
 		<div
-			class="wrapper rounded border border-black shadow absolute shadow-neo top-0 right-0 flex flex-col items-start bg-white text-black"
+			class="wrapper rounded border border-black absolute shadow-neo top-0 right-0 flex flex-col items-start bg-white text-black"
 		>
 			<div
 				class="top-bar py-1 uppercase rounded-t w-full font-['AuthenticSansCondensed'] text-center bg-gray-300"
@@ -110,31 +113,8 @@
 {/if}
 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
 	{#each $searchStore.data as candidate}
-		{@const slug = candidate.name.replace(/\s+/g, '-').replace(/\./g, '').toLowerCase()}
 		{@const imgUrl = `/portraits/${candidate.slug}-square.webp`}
-		{@const borderColor =
-			candidate.party === 'Democratic'
-				? 'border-r-blue-400'
-				: candidate.party === 'Republican'
-				? 'border-r-red-400'
-				: 'border-r-gray-400'}
-		<a
-			href={`/${slug}`}
-			class="bg-white flex flex-col justify-center items-center text-center cursor-pointer candidate p-4 border border-black shadow-neo rounded relative"
-		>
-			<div
-				class={`corner-tag rounded-tr-sm absolute top-0 right-0 w-0 h-0 border-t-[0] border-t-transparent border-r-[45px] ${borderColor} border-b-[45px] border-b-transparent`}
-			/>
-
-			<div
-				class="absolute top-1 text-sm font-bold right-2 text-white font-['AuthenticSansCondensed']"
-			>
-				{candidate.party[0]}
-			</div>
-			<img class="w-24 h-24 rounded-sm mb-2" src={imgUrl} alt={candidate.name} />
-			<h2 class="text-xl font-medium">{candidate.name}</h2>
-			<p class="text-sm">{candidate.current_position}</p>
-		</a>
+		<CandidateCard {candidate} {imgUrl} />
 	{/each}
 </div>
 
