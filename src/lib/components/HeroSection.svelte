@@ -1,4 +1,4 @@
-<div class="hero-section shadow-neo rounded border-black bg-blue-500 text-white p-12 border">
+<div class="hero-section shadow-neo rounded border-2 border-black bg-blue-500 text-white p-12">
 	<h1 class="text-4xl mb-4">Discover Your Next President</h1>
 	<p class="text-lg mb-8">Learn more about the candidates in the upcoming election.</p>
 	<a

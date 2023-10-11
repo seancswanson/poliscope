@@ -3,6 +3,7 @@
 	import { fade } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	let showPopover = false;
+	let selectedTab = '';
 
 	import question from '$lib/assets/question.png';
 	/** @type {import('./$types').PageData} */
@@ -36,8 +37,13 @@
 	const imgUrl = `/portraits/${candidate.slug}-square.webp`;
 </script>
 
-<a href="/candidates" class="text-blue-500 hover:underline mb-2">← Back to candidates</a>
-<div class="container mx-auto p-6 bg-white shadow-md rounded">
+<a
+	href="/candidates"
+	id="back-btn"
+	class="flex w-fit text-blue-500 hover:underline mb-4 shadow-neo bg-white border-2 border-black rounded"
+	>← Back to candidates</a
+>
+<div class="container mx-auto p-6 bg-white shadow-neo border-black border-2 rounded">
 	<!-- Header -->
 	<header class="text-center mb-8">
 		<h1 class="text-4xl font-extrabold">{candidate.name}</h1>
@@ -46,7 +52,7 @@
 
 	<!-- Portrait -->
 	<img
-		class="w-1/4 h-1/4 rounded-full mb-6 mx-auto border-4 shadow-sm border-gray-300"
+		class="w-1/4 h-1/4 rounded-full mb-6 mx-auto border-2 shadow-neo border-black"
 		src={imgUrl}
 		alt={candidate.name}
 	/>
@@ -63,37 +69,56 @@
 	</blockquote>
 
 	<section>
-		<div class="analysis-wrapper mb-6 border rounded px-4 py-2">
-			<div class="analysis-header mb-4 text-center">
-				<div class="analysis-title flex gap-2 items-center justify-center">
+		<div id="analysis-wrapper" class="mb-6 border-black border-2 shadow-neo rounded pt-2">
+			<div id="analysis-header" class="mb-4 text-center flex gap-3 flex-col">
+				<div
+					id="analysis-title"
+					class="w-fit flex px-4 border border-black bg-white rounded gap-2 mx-auto shadow-neo items-center justify-center"
+				>
 					<h2 class="font-[600] text-2xl">Poliscope Analysis</h2>
-					<button on:click={() => (showPopover = !showPopover)}
+					<button class="shrink-0" on:click={() => (showPopover = !showPopover)}
 						><img src={question} alt="q" class="w-4 h-4" /></button
 					>
 				</div>
 				<h3>How Different Political Alignments Interpret the Candidate's Policy Stances</h3>
 				<span class="text-xs italic"
 					>Where on the political spectrum do you identify? <a
-						class="text-blue-500 underline"
+						class="text-blue-500 underline font-semibold"
 						href="https://www.pewresearch.org/politics/quiz/political-typology/"
 						alt="Political Quiz">Take the quiz.</a
 					></span
 				>
 			</div>
 			<div>
-				<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-					<div class="bg-gray-100 p-4 rounded">
-						<h3 class="font-[600] text-xl mb-3">Left Leaning</h3>
+				<div class="grid grid-rows-1 grid-cols-3">
+					<button
+						on:click={() => (selectedTab = 'left_leaning')}
+						class={`${
+							selectedTab === 'left_leaning' ? 'bg-pink-300 ' : ''
+						} border-0 border-r-2 border-t-2 border-black px-4 py-2`}>Left Leaning</button
+					>
+					<button
+						on:click={() => (selectedTab = 'centrist')}
+						class={`${
+							selectedTab === 'centrist' ? 'bg-pink-300 ' : ''
+						} border-0 border-t-2 border-black border-r-2 px-4 py-2`}>Centrist</button
+					>
+					<button
+						on:click={() => (selectedTab = 'right_leaning')}
+						class={`${
+							selectedTab === 'right_leaning' ? 'bg-pink-300 ' : ''
+						} border-b-0 border-t-2 border-black px-4 py-2`}>Right Leaning</button
+					>
+				</div>
+				<!-- Content Container -->
+				<div class="bg-white py-4 px-6 rounded border-0 border-t-2 rounded-t-none border-black">
+					{#if selectedTab === 'left_leaning'}
 						<p>{candidate.policy_perspectives.left_leaning}</p>
-					</div>
-					<div class="bg-gray-100 p-4 rounded">
-						<h3 class="font-[600] text-xl mb-3">Centrist</h3>
+					{:else if selectedTab === 'centrist'}
 						<p>{candidate.policy_perspectives.centrist}</p>
-					</div>
-					<div class="bg-gray-100 p-4 rounded">
-						<h3 class="font-[600] text-xl mb-3">Right Leaning</h3>
+					{:else if selectedTab === 'right_leaning'}
 						<p>{candidate.policy_perspectives.right_leaning}</p>
-					</div>
+					{/if}
 				</div>
 			</div>
 		</div>
@@ -106,7 +131,7 @@
 		>
 			<!-- This div is your content box -->
 			<div
-				class="flex flex-col gap-2 rounded py-2 px-4 relative overflow-scroll h-1/2 w-3/4 max-w-[500px] bg-white"
+				class="flex flex-col shadow-neo border-2 border-black gap-2 rounded py-4 px-6 relative overflow-scroll h-1/2 w-3/4 max-w-[500px] bg-white"
 			>
 				<p class="font-bold text-lg">How Were These Policy Perspectives Generated?</p>
 				<p class="mb-4">
@@ -130,49 +155,58 @@
 		</div>
 	{/if}
 	<!-- Biography -->
-	<section class="mb-6">
+	<section class="mb-6 border-black border-2 text-center rounded shadow-neo px-2 py-2">
 		<h2 class="font-[600] text-2xl mb-3">Biography</h2>
-		<ul class="list-disc list-inside">
+		<ul class=" list-inside text-left mx-auto w-fit">
 			<li>Birth Year: {candidate.biography.birth_year}</li>
 			<li>Birth Place: {candidate.biography.birth_place}</li>
 			<li>
 				Education:
-				{#each candidate.biography.education as education}
-					<span>{education}</span>
-				{/each}
+				<ul class=" list-inside text-left mx-2 w-fit">
+					{#each candidate.biography.education as education}
+						<li class="shadow-sm border-2 border-black px-2 mb-2">{education}</li>
+					{/each}
+				</ul>
 			</li>
 		</ul>
 	</section>
 
 	<!-- Past Roles -->
-	<section class="mb-6">
+	<section class="mb-6 shadow-neo border-black border-2 text-center rounded py-2">
 		<h2 class="font-[600] text-2xl mb-3">Past Roles</h2>
-		<ul class="list-disc list-inside">
+		<ul
+			class=" list-inside text-left flex gap-4 text-center justify-evenly mx-auto flex-wrap w-fit"
+		>
 			{#each candidate.past_roles as role}
-				<li>{role.start_year} - {role.end_year}: {role.role}</li>
+				<li class="shadow-sm basis-1/4 flex flex-col mb-2 gap-2">
+					<span class=" border-2 border-black p-2 rounded">{role.role}</span>
+					<span class="text-sm">{role.start_year} - {role.end_year}</span>
+				</li>
 			{/each}
 		</ul>
 	</section>
 
 	<!-- Key Policy Points -->
-	<section class="mb-6">
+	<section class="mb-6 shadow-neo border-black border-2 text-center rounded px-2 py-2">
 		<h2 class="font-[600] text-2xl mb-3">Key Policy Points</h2>
-		<ul class="list-disc list-inside">
+		<ul class="flex flex-col gap-4 list-inside text-left mx-auto w-fit">
 			{#each candidate.key_policy_points as point}
-				<li>{point}</li>
+				<li class="rounded shadow-sm border-2 border-black p-2 mb-2 font-bold">{point}</li>
 			{/each}
 		</ul>
 	</section>
 
 	<!-- Social Media Links -->
-	<section class="mb-6">
+	<section
+		class="mb-6 shadow-neo border-2 border-black rounded p-2 flex flex-col justify-center items-center"
+	>
 		<h2 class="font-[600] text-2xl mb-3">Connect with {candidate.name}</h2>
 		<ul class="flex gap-4">
 			{#each Object.entries(candidate.social_media) as [platform, link]}
 				{#if link}
 					{@const imgUrl = `/social/${platform}.png`}
 
-					<li>
+					<li class="shadow-sm border-2 border-black px-2 mb-2">
 						<a href={link} class="text-blue-500 hover:underline flex items-center gap-2">
 							<img src={imgUrl} alt={`${platform} logo`} class="w-8 h-8" />
 						</a>
@@ -182,3 +216,9 @@
 		</ul>
 	</section>
 </div>
+
+<style>
+	#back-btn,
+	#anaysis-title {
+	}
+</style>
