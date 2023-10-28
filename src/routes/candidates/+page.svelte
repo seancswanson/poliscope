@@ -1,6 +1,6 @@
 <script lang="ts">
 	import CandidateCard from './CandidateCard.svelte';
-
+	import candidatesHeroImg from '$lib/assets/candidates.png';
 	import PartyInfoPill from './PartyInfoPill.svelte';
 
 	import candidates from '$lib/data/candidates.json';
@@ -40,6 +40,7 @@
 
 <!-- Candidates List -->
 <h1 class="text-2xl mb-5 font-bold text-center">2024 Presidential Candidates</h1>
+<img src={candidatesHeroImg} class="mx-auto w-2/3" alt="" />
 <h2 class="text-center mb-2">
 	As of <span class="font-semibold">{formattedDate}*</span>, there are
 	<span class="font-semibold">{numberCandidates.total}</span> people in the race for President
