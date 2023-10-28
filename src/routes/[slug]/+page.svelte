@@ -1,10 +1,10 @@
 <script>
 	// @ts-nocheck
 	import { fade } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+	import { quintOut, quintInOut } from 'svelte/easing';
 	let showPopover = false;
 	let selectedTab = '';
-
+	import about from '$lib/assets/about.png';
 	import question from '$lib/assets/question.png';
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -40,28 +40,27 @@
 <a
 	href="/candidates"
 	id="back-btn"
-	class="flex w-fit text-blue-500 hover:underline mb-4 shadow-neo bg-white border-2 border-black rounded"
+	class="flex w-fit px-4 text-blue-500 hover:underline mb-4 shadow-neo bg-white border-2 border-black rounded"
 	>← Back to candidates</a
 >
-<div class="container mx-auto p-6 bg-white shadow-neo border-black border-2 rounded">
+<div class="container mx-auto p-6">
 	<!-- Header -->
-	<header class="text-center mb-8">
+	<header class="text-center mb-8 bg-white shadow-neo border-black border-2 rounded px-6 py-2">
 		<h1 class="text-4xl font-extrabold">{candidate.name}</h1>
 		<span class="text-lg">{candidate.current_position}</span>
+		<!-- Portrait -->
+		<img
+			class="w-1/4 h-1/4 rounded-full mb-6 mx-auto border-2 shadow-neo border-black"
+			src={imgUrl}
+			alt={candidate.name}
+		/>
+
+		<!-- Quick Facts -->
+		<div class="flex justify-between items-center mb-6">
+			<span><strong>Party:</strong> {candidate.party}</span>
+			<span><strong>Announcement Date:</strong> {candidate.announcement_date}</span>
+		</div>
 	</header>
-
-	<!-- Portrait -->
-	<img
-		class="w-1/4 h-1/4 rounded-full mb-6 mx-auto border-2 shadow-neo border-black"
-		src={imgUrl}
-		alt={candidate.name}
-	/>
-
-	<!-- Quick Facts -->
-	<div class="flex justify-between items-center mb-6">
-		<span><strong>Party:</strong> {candidate.party}</span>
-		<span><strong>Announcement Date:</strong> {candidate.announcement_date}</span>
-	</div>
 
 	<!-- Quote -->
 	<blockquote class="italic border-l-4 pl-4 mb-6">
@@ -92,19 +91,28 @@
 			<div>
 				<div class="grid grid-rows-1 grid-cols-3">
 					<button
-						on:click={() => (selectedTab = 'left_leaning')}
+						on:click={() => {
+							selectedTab = 'left_leaning';
+							setTimeout(() => (visible = false), 500);
+						}}
 						class={`${
 							selectedTab === 'left_leaning' ? 'bg-pink-300 ' : ''
 						} border-0 border-r-2 border-t-2 border-black px-4 py-2`}>Left Leaning</button
 					>
 					<button
-						on:click={() => (selectedTab = 'centrist')}
+						on:click={() => {
+							selectedTab = 'centrist';
+							setTimeout(() => (visible = false), 500);
+						}}
 						class={`${
 							selectedTab === 'centrist' ? 'bg-pink-300 ' : ''
 						} border-0 border-t-2 border-black border-r-2 px-4 py-2`}>Centrist</button
 					>
 					<button
-						on:click={() => (selectedTab = 'right_leaning')}
+						on:click={() => {
+							selectedTab = 'right_leaning';
+							setTimeout(() => (visible = false), 500);
+						}}
 						class={`${
 							selectedTab === 'right_leaning' ? 'bg-pink-300 ' : ''
 						} border-b-0 border-t-2 border-black px-4 py-2`}>Right Leaning</button
@@ -113,11 +121,19 @@
 				<!-- Content Container -->
 				<div class="bg-white py-4 px-6 rounded border-0 border-t-2 rounded-t-none border-black">
 					{#if selectedTab === 'left_leaning'}
-						<p>{candidate.policy_perspectives.left_leaning}</p>
+						<p transition:fade>
+							{candidate.policy_perspectives.left_leaning}
+						</p>
 					{:else if selectedTab === 'centrist'}
-						<p>{candidate.policy_perspectives.centrist}</p>
+						<p transition:fade>
+							{candidate.policy_perspectives.centrist}
+						</p>
 					{:else if selectedTab === 'right_leaning'}
-						<p>{candidate.policy_perspectives.right_leaning}</p>
+						<p transition:fade>
+							{candidate.policy_perspectives.right_leaning}
+						</p>
+					{:else}
+						<img src={about} alt="illustration" />
 					{/if}
 				</div>
 			</div>
