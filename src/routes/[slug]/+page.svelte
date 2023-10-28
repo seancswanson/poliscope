@@ -1,7 +1,6 @@
 <script>
 	// @ts-nocheck
-	import { fade } from 'svelte/transition';
-	import { quintOut, quintInOut } from 'svelte/easing';
+	import { slide, fade } from 'svelte/transition';
 	let showPopover = false;
 	let selectedTab = '';
 	import about from '$lib/assets/about.png';
@@ -40,7 +39,7 @@
 <a
 	href="/candidates"
 	id="back-btn"
-	class="flex w-fit px-4 text-blue-500 hover:underline mb-4 shadow-neo bg-white border-2 border-black rounded"
+	class="flex font-bold w-fit px-4 text-blue-500 hover:underline mb-4 shadow-neo bg-white border-2 border-black rounded"
 	>← Back to candidates</a
 >
 <div class="container mx-auto p-6">
@@ -93,7 +92,6 @@
 					<button
 						on:click={() => {
 							selectedTab = 'left_leaning';
-							setTimeout(() => (visible = false), 500);
 						}}
 						class={`${
 							selectedTab === 'left_leaning' ? 'bg-pink-300 ' : ''
@@ -102,7 +100,6 @@
 					<button
 						on:click={() => {
 							selectedTab = 'centrist';
-							setTimeout(() => (visible = false), 500);
 						}}
 						class={`${
 							selectedTab === 'centrist' ? 'bg-pink-300 ' : ''
@@ -111,7 +108,6 @@
 					<button
 						on:click={() => {
 							selectedTab = 'right_leaning';
-							setTimeout(() => (visible = false), 500);
 						}}
 						class={`${
 							selectedTab === 'right_leaning' ? 'bg-pink-300 ' : ''
@@ -121,15 +117,15 @@
 				<!-- Content Container -->
 				<div class="bg-white py-4 px-6 rounded border-0 border-t-2 rounded-t-none border-black">
 					{#if selectedTab === 'left_leaning'}
-						<p transition:fade>
+						<p transition:slide>
 							{candidate.policy_perspectives.left_leaning}
 						</p>
 					{:else if selectedTab === 'centrist'}
-						<p transition:fade>
+						<p transition:slide>
 							{candidate.policy_perspectives.centrist}
 						</p>
 					{:else if selectedTab === 'right_leaning'}
-						<p transition:fade>
+						<p transition:slide>
 							{candidate.policy_perspectives.right_leaning}
 						</p>
 					{:else}
@@ -222,7 +218,7 @@
 				{#if link}
 					{@const imgUrl = `/social/${platform}.png`}
 
-					<li class="shadow-sm border-2 border-black px-2 mb-2">
+					<li class="shadow-sm px-2 mb-2">
 						<a href={link} class="text-blue-500 hover:underline flex items-center gap-2">
 							<img src={imgUrl} alt={`${platform} logo`} class="w-8 h-8" />
 						</a>
@@ -234,7 +230,4 @@
 </div>
 
 <style>
-	#back-btn,
-	#anaysis-title {
-	}
 </style>
