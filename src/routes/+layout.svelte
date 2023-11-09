@@ -13,7 +13,6 @@
 </script>
 
 <div class="page-wrapper h-full grid grid-rows-[auto,auto,1fr,auto]">
-	<!-- Header -->
 	<Header />
 	{#key pathname}
 		<main

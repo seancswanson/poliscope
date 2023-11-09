@@ -1,5 +1,5 @@
 <script>
-	import logo from '$lib/assets/logo.png';
+	import { page } from '$app/stores';
 	import hamburger from '$lib/assets/hamburger.png';
 	import MediaQuery from '../MediaQuery.svelte';
 	import LogoAndName from './LogoAndName.svelte';
@@ -25,9 +25,6 @@
 	let now = new Date().getTime();
 	let t = endDate - now;
 	let days = Math.floor(t / (1000 * 60 * 60 * 24));
-	let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-	let seconds = Math.floor((t % (1000 * 60)) / 1000);
 </script>
 
 <div class="countdown bg-slate-700 text-white">
@@ -45,7 +42,12 @@
 				<LogoAndName />
 				<nav class="flex gap-2">
 					{#each navItems as navItem (navItem.path)}
-						<a class="text-lg px-2" href={navItem.path}>{navItem.label}</a>
+						<a
+							class="text-lg px-2 {$page.url.pathname === navItem.path
+								? 'border-b-2 border-slate-700'
+								: ''}"
+							href={navItem.path}>{navItem.label}</a
+						>
 					{/each}
 				</nav>
 			</div>
@@ -68,7 +70,9 @@
 				>
 					{#each navItems as navItem (navItem.path)}
 						<a
-							class="text-lg py-2 font-['AuthenticSansCondensed'] tracking-wide hover:bg-slate-100"
+							class="text-lg py-2 {$page.url.pathname === navItem.path
+								? 'underline'
+								: ''} font-['AuthenticSansCondensed'] tracking-wide hover:bg-slate-100"
 							href={navItem.path}>{navItem.label}</a
 						>
 					{/each}
