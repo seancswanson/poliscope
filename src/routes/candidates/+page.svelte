@@ -52,16 +52,16 @@
 	<PartyInfoPill count={numberCandidates.independent} party="Independent" />
 	<PartyInfoPill count={numberCandidates.green} party="Green" />
 </div>
-<p class="italic text-center text-xs">Click on a candidate below to learn more</p>
+<p class="italic text-center text-xs mb-2">Click on a candidate below to learn more</p>
 
-<div class="filter-bar flex justify-end mb-2">
+<!-- <div class="filter-bar flex justify-end mb-2">
 	<button on:click={() => (filterVisible = true)} class={``}
 		><img
 			src="$lib/assets/filter.png"
 			class={`border-black border-2  transition-all ease-in-out shadow-neo w-8 p-1`}
 		/></button
 	>
-</div>
+</div> -->
 {#if filterVisible}
 	<div
 		role="dialog"
