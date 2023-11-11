@@ -1,8 +1,3 @@
-// get from wikipedia simple api that gets a slug from the URL param
-// and returns the wikipedia page data for that candidate
-
-import { page } from '$app/stores';
-
 function getSpecialWikipediaSlug(name) {
 	const specialNames = {
 		'Perry Johnson': 'Perry_Johnson_(businessman)',
@@ -23,7 +18,7 @@ function generateWikipediaURL(name) {
 	return `https://simple.wikipedia.org/w/api.php?action=query&format=json&titles=${wikipediaName}&prop=extracts&exintro=true`;
 }
 
-export const GET = async ({ request, url }) => {
+export const GET = async ({ url }) => {
 	const name = url.searchParams.get('name');
 	const wikipediaURL = generateWikipediaURL(name);
 	const res = await fetch(wikipediaURL);
