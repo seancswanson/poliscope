@@ -39,8 +39,8 @@
 </script>
 
 <!-- Candidates List -->
-<h1 class="text-2xl mb-5 font-bold text-center">2024 Presidential Candidates</h1>
-<img src={candidatesHeroImg} class="mx-auto w-2/3" alt="" />
+<h1 class="text-2xl mb-4 font-bold text-center">2024 Presidential Candidates</h1>
+<img src={candidatesHeroImg} class="mx-auto w-2/3 mb-4" alt="" />
 <h2 class="text-center mb-2">
 	As of <span class="font-semibold">{formattedDate}*</span>, there are
 	<span class="font-semibold">{numberCandidates.total}</span> people in the race for President
@@ -64,7 +64,7 @@
 </div> -->
 {#if filterVisible}
 	<div
-		role="dialog"
+		role="button"
 		aria-labelledby="Title"
 		aria-describedby="Description"
 		aria-orientation="vertical"
@@ -74,15 +74,14 @@
 	>
 		<div
 			class="backdrop"
+			role="button"
 			on:click|stopPropagation={() => (filterVisible = false)}
 			transition:fade={{ delay: 25, duration: 150, easing: quintOut }}
 		/>
 		<div
 			class="wrapper rounded border border-black absolute shadow-neo top-0 right-0 flex flex-col items-start bg-white text-black"
 		>
-			<div
-				class="top-bar py-1 uppercase rounded-t w-full font-['AuthenticSansCondensed'] text-center bg-gray-300"
-			>
+			<div class="top-bar py-1 uppercase rounded-t w-full text-center bg-gray-300">
 				Filter Options
 			</div>
 			<div class="content min-w-[250px] mx-auto p-2 flex flex-col gap-2">

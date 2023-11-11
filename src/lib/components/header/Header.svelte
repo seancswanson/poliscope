@@ -29,13 +29,13 @@
 
 <div class="countdown bg-slate-700 text-white">
 	<div
-		class="inner max-w-[600px] mx-auto flex items-center justify-center gap-2 py-1 px-4 uppercase font-['AuthenticSansCondensed'] tracking-wide"
+		class="inner max-w-[600px] mx-auto flex items-center justify-center gap-2 py-1 px-4 uppercase tracking-wide"
 	>
 		<div class="text-xs">Countdown to Election Day:</div>
 		<div class="text-xs">{days} days</div>
 	</div>
 </div>
-<header class="shadow-sm mb-5 border-b border-b-gray-200 sticky top-0 bg-white z-50">
+<header class="border-[1.5px] border-l-0 border-r-0 border-black sticky top-0 bg-white z-50">
 	<MediaQuery query="(min-width: 768px)" let:matches>
 		{#if matches}
 			<div class="inner max-w-[600px] mx-auto flex items-center justify-between py-2 px-4">
@@ -58,21 +58,33 @@
 			<div class="inner max-w-[600px] mx-auto flex items-center justify-between py-2 px-4">
 				<LogoAndName />
 				{#if navExpanded}
-					<span on:click={toggleNav} class="text-4xl cursor-pointer">&times;</span>
+					<button
+						on:click={toggleNav}
+						on:keydown|preventDefault={(e) => e.key === 'Enter' && toggleNav()}
+						aria-label="Close navigation menu"
+					>
+						<span class="text-4xl cursor-pointer" aria-hidden="true">&times;</span>
+					</button>
 				{/if}
 				{#if !navExpanded}
-					<img src={hamburger} alt="" class="cursor-pointer" on:click={toggleNav} />
+					<button
+						on:click={toggleNav}
+						on:keydown|preventDefault={(e) => e.key === 'Enter' && toggleNav()}
+						aria-label="Open navigation menu"
+					>
+						<img src={hamburger} alt="Open navigation menu" />
+					</button>
 				{/if}
 			</div>
 			{#if navExpanded}
 				<nav
-					class="shadow-sm flex flex-col absolute w-full bg-slate-50 top-[66px] py-4 font-thin text-center border-b border-gray-300"
+					class="shadow-sm flex flex-col absolute w-full bg-slate-50 top-[66px] text-center border-b-[1.5px] border-t-[1.5px] border-black"
 				>
 					{#each navItems as navItem (navItem.path)}
 						<a
-							class="text-lg py-2 {$page.url.pathname === navItem.path
-								? 'underline'
-								: ''} font-['AuthenticSansCondensed'] tracking-wide hover:bg-slate-100"
+							class="text-lg py-3 {$page.url.pathname === navItem.path
+								? 'bg-slate-200 font-bold'
+								: ''}  tracking-wide hover:bg-slate-100"
 							href={navItem.path}>{navItem.label}</a
 						>
 					{/each}
