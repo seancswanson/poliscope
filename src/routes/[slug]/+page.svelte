@@ -15,7 +15,7 @@
 	<a
 		href="/candidates"
 		id="back-btn"
-		class="flex w-fit px-4 text-blue-500 hover:underline mb-4 shadow-neo bg-white border-[1.5px] border-black rounded"
+		class="flex w-fit px-4 text-blue-600 hover:underline mb-4 shadow-neo bg-white border-[1.5px] border-black rounded"
 		>← Back to candidates</a
 	>
 	<section class="flex gap-4 flex-col sm:flex-row mb-4">
@@ -43,7 +43,7 @@
 					{@const portraitImgUrl = `/social/${platform}.png`}
 
 					<li class="shadow-sm px-2 mb-2">
-						<a href={link} class="text-blue-500 hover:underline flex items-center gap-2">
+						<a href={link} class="text-blue-600 hover:underline flex items-center gap-2">
 							<img src={portraitImgUrl} alt={`${platform} logo`} class="w-8 h-8" />
 						</a>
 					</li>

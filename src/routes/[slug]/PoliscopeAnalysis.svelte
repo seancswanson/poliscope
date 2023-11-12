@@ -39,7 +39,7 @@
 			alt="Political Quiz"
 		>
 			Where on the political spectrum do you identify?
-			<span class="underline font-semibold text-blue-500">
+			<span class="underline font-semibold text-blue-600">
 				Take the quiz.<img
 					src={link}
 					alt="link"

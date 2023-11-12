@@ -16,7 +16,7 @@
 	<Header />
 	{#key pathname}
 		<main
-			class="max-w-[768px] mx-auto z-0 px-2 py-4"
+			class="max-w-[768px] mx-auto z-0 px-2 py-8"
 			in:fly={{ easing: cubicOut, y: 10, duration: 300, delay: 400 }}
 			out:fly={{ easing: cubicIn, y: -10, duration: 300 }}
 		>
