@@ -1,22 +1,21 @@
 <script lang="ts">
-	export let count: number;
-	export let party: string;
+	export let party: { party: string; count: number };
 
-	const borderColor =
-		party === 'Democratic'
-			? 'border-blue-300'
-			: party === 'Republican'
-			? 'border-red-300'
-			: party === 'Green'
-			? 'border-green-300'
-			: 'border-gray-300';
+	const accentStyles =
+		party.party === 'Democratic'
+			? 'border-blue-300 shadow-blue-400'
+			: party.party === 'Republican'
+			? 'border-red-300 shadow-red-400'
+			: party.party === 'Green'
+			? 'border-green-300 shadow-green-400'
+			: 'border-gray-300 shadow-gray-400';
 </script>
 
 <div
-	class={`candidate-number-block flex gap-2 font-['AuthenticSansCondensed'] rounded-full border-2 ${borderColor} px-2 shadow-neo`}
+	class={`flex gap-2 font-['AuthenticSansCondensed'] rounded-full border-2 ${accentStyles} px-2 shadow-neo`}
 >
-	<div class="number">{count}</div>
-	<div class="label">{party}</div>
+	<div class="number">{party.count}</div>
+	<div class="label">{party.party}</div>
 </div>
 
 <style>

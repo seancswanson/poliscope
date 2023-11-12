@@ -6,7 +6,7 @@
 			step: 1,
 			title: 'Select a Candidate',
 			description:
-				'Navigate to our <a href="/candidates" class="underline text-blue-500">candidates</a> page and choose who you want to know more about.'
+				'Navigate to our <a href="/candidates" class="underline text-blue-600">candidates</a> page and choose who you want to know more about.'
 		},
 		read: {
 			step: 2,
@@ -18,7 +18,7 @@
 			step: 3,
 			title: 'Learn About Issues',
 			description:
-				'Head over to the <a href="/issues" class="underline text-blue-500">issues</a> page to understand the core issues affecting this election.'
+				'Head over to the <a href="/issues" class="underline text-blue-600">issues</a> page to understand the core issues affecting this election.'
 		},
 		decide: {
 			step: 4,
@@ -38,7 +38,7 @@
 			<button
 				class:active={selectedStep === key}
 				on:click={() => (selectedStep = key)}
-				class="relative py-2 sm:py-0 px-2 border-[1.5px] text-sm rounded hover:bg-gray-100 shadow-neo border-black hover:translate-y-[-2px] transition-all"
+				class="relative sm:py-0 px-2 border-[1.5px] text-sm rounded hover:bg-gray-100 shadow-neo border-black hover:translate-y-[-2px] transition-all"
 			>
 				{value.title}
 				<span
@@ -48,7 +48,7 @@
 			</button>
 		{/each}
 	</div>
-	<div class="px-4">
+	<div class="px-4 border-l-[1.5px] border-black">
 		<p class="font-semibold">{steps[selectedStep].title}</p>
 		<p>{@html steps[selectedStep].description}</p>
 	</div>
