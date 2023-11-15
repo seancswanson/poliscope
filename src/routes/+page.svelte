@@ -15,7 +15,8 @@
 		<p class="font-bold">Poliscope simplifies the process for you.</p>
 		<p>
 			Our web app leverages OpenAI's ChatGPT, Ballotpedia, and open-sourced data to bring you
-			unbiased, comprehensive profiles on each presidential candidate.
+			comprehensive profiles on each presidential candidate in as much of an unbiased manner as
+			possible.
 		</p>
 	</div>
 </section>

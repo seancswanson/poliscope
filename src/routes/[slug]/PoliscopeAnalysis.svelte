@@ -8,7 +8,7 @@
 	import link from '$lib/assets/link.png';
 </script>
 
-<div id="analysis-wrapper" class="border-black border-[1.5px] rounded">
+<div id="analysis-wrapper" class="border-black border-[1.5px] rounded shadow-neo">
 	<div id="analysis-header" class="mb-4 text-center flex gap-3 flex-col">
 		<div
 			id="analysis-title"

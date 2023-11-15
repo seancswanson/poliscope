@@ -43,9 +43,9 @@
 				<nav class="flex gap-2">
 					{#each navItems as navItem (navItem.path)}
 						<a
-							class="text-lg px-2 {$page.url.pathname === navItem.path
+							class="text-lg px-2 transition-all {$page.url.pathname === navItem.path
 								? 'border-b-2 border-slate-700'
-								: ''}"
+								: 'hover:border-b-2 hover:border-slate-700'}"
 							href={navItem.path}>{navItem.label}</a
 						>
 					{/each}

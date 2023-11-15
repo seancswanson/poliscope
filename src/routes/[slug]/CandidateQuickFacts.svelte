@@ -9,7 +9,8 @@
 		Democratic: 'https://en.wikipedia.org/wiki/History_of_the_Democratic_Party_(United_States)',
 		Republican: 'https://en.wikipedia.org/wiki/History_of_the_Republican_Party_(United_States)',
 		Green: 'https://en.wikipedia.org/wiki/Green_Party_of_the_United_States',
-		Independent: 'https://en.wikipedia.org/wiki/Independent_politician'
+		Independent: 'https://en.wikipedia.org/wiki/Independent_politician',
+		Libertarian: 'https://en.wikipedia.org/wiki/Libertarian_Party_(United_States)'
 	};
 </script>
 

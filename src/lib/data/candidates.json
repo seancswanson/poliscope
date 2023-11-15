@@ -1,8 +1,50 @@
 {
     "candidates": [
         {
+            "name": "Chase Oliver",
+            "slug": "chase-oliver",
+            "withdrawn": false,
+            "party": "Libertarian",
+            "current_position": "Import Shipping Business Professional",
+            "announcement_date": "May 25, 2024",
+            "past_roles": [
+                {
+                    "role": "Professional in Import Shipping Business",
+                    "start_year": 2022,
+                    "end_year": 2024
+                }
+            ],
+            "quote": "I would like my term to be a symbol that having more choices on the ballot and more voices in the debate is a positive for the politics of this nation.",
+            "key_legislation_or_accomplishments": [],
+            "key_policy_points": [
+                "Criminal Justice Reform",
+                "End Foreign Wars",
+                "End the Drug War"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "Focus on criminal justice reform, ending foreign wars, and ending the drug war.",
+                "centrist": "N/A",
+                "right_leaning": "N/A"
+            },
+            "biography": {
+                "birth_year": "1985",
+                "birth_place": "Nashville, Tennessee",
+                "education": [
+                    "N/A"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
             "name": "Marianne Williamson",
             "slug": "marianne-williamson",
+            "withdrawn": false,
             "party": "Democratic",
             "current_position": "Author/Speaker",
             "announcement_date": "February 23, 2023",
@@ -15,7 +57,6 @@
             ],
             "quote": "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.",
             "key_legislation_or_accomplishments": [],
-            "running_mate_2020": "N/A",
             "key_policy_points": [
                 "Universal Healthcare",
                 "Climate Change",
@@ -42,8 +83,76 @@
             }
         },
         {
+            "name": "Jill Stein",
+            "slug": "jill-stein",
+            "withdrawn": false,
+            "party": "Green",
+            "current_position": "Physician, Organizer, Environmental-Health Advocate",
+            "announcement_date": "November 9, 2023",
+            "past_roles": [
+                {
+                    "role": "2016 Green Party Presidential Candidate",
+                    "start_year": 2016,
+                    "end_year": 2016
+                },
+                {
+                    "role": "2012 Green Party Presidential Candidate",
+                    "start_year": 2012,
+                    "end_year": 2012
+                },
+                {
+                    "role": "Massachusetts Green-Rainbow Party Governor Candidate",
+                    "start_year": 2002,
+                    "end_year": 2002
+                },
+                {
+                    "role": "Massachusetts Green-Rainbow Party State Representative Candidate",
+                    "start_year": 2004,
+                    "end_year": 2004
+                },
+                {
+                    "role": "Massachusetts Secretary of State Candidate",
+                    "start_year": 2006,
+                    "end_year": 2006
+                },
+                {
+                    "role": "Massachusetts Gubernatorial Candidate",
+                    "start_year": 2010,
+                    "end_year": 2010
+                }
+            ],
+            "quote": "I'm running for president to offer a better choice for the people outside the failed two-party system. We'll put a pro-worker, anti-war, climate emergency agenda front and center in this election and on the ballot in November.",
+            "key_legislation_or_accomplishments": [],
+            "key_policy_points": [
+                "Environmental Health",
+                "Activism",
+                "Campaign Finance Reform"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "Jill Stein, representing the Green Party, is often celebrated by left-leaning individuals for her staunch advocacy of environmental issues and her commitment to social justice. Her platform, which typically includes transitioning to 100% renewable energy, supporting universal healthcare, and reducing military spending, resonates with progressive voters seeking radical change from traditional Democratic policies. Stein's emphasis on grassroots activism and her criticism of corporate influence in politics aligns well with left-wing ideals of equality and sustainability. However, some on the far left may criticize her for not fully aligning with socialist principles or for her perceived impact on the Democratic vote in crucial elections.",
+                "centrist": "From a centrist viewpoint, Jill Stein presents a mixed bag. Her focus on environmental issues and advocacy for healthcare reform are seen as positive, aligning with the general public's growing concern about climate change and healthcare accessibility. However, centrists often view her policy proposals as too radical or impractical, particularly her plans for a rapid shift to renewable energy and significant cuts in defense spending. Stein's criticism of both major parties can be appealing to those disenchanted with the current political system, but her perceived lack of experience in governance and pragmatic policy-making can be a concern for voters seeking a balanced approach.",
+                "right_leaning": "Right-leaning individuals often view Jill Stein as too extreme and out of touch with mainstream American values. Her environmental policies are frequently seen as overreaching and potentially damaging to the economy, especially in sectors like fossil fuels and manufacturing. Stein's advocacy for large-scale social programs, such as universal healthcare and free college tuition, clashes with conservative principles of small government and fiscal responsibility. Additionally, her critical stance on U.S. military engagements and defense spending is often at odds with right-wing emphasis on national security and military strength."
+            },
+            "biography": {
+                "birth_year": 1950,
+                "birth_place": "Chicago, Illinois",
+                "education": [
+                    "Harvard College, BA in Social Relations, 1973",
+                    "Harvard Medical School, MD, 1979"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
             "name": "Doug Burgum",
             "slug": "doug-burgum",
+            "withdrawn": false,
             "party": "Republican",
             "current_position": "Governor of North Dakota",
             "announcement_date": "2023-06-07",
@@ -98,6 +207,7 @@
         {
             "name": "Ron DeSantis",
             "slug": "ron-desantis",
+            "withdrawn": false,
             "party": "Republican",
             "current_position": "Governor of Florida",
             "announcement_date": "May 24, 2023",
@@ -151,6 +261,7 @@
         {
             "name": "Asa Hutchinson",
             "slug": "asa-hutchinson",
+            "withdrawn": false,
             "party": "Republican",
             "current_position": "Running for President of the United States",
             "announcement_date": "April 2, 2023",
@@ -212,6 +323,7 @@
         {
             "name": "Perry Johnson",
             "slug": "perry-johnson",
+            "withdrawn": false,
             "party": "Republican",
             "current_position": "Businessman and Author",
             "announcement_date": "March 2, 2023",
@@ -262,6 +374,7 @@
         {
             "name": "William Hurd",
             "slug": "william-hurd",
+            "withdrawn": true,
             "party": "Republican",
             "current_position": "Running for President of the United States",
             "announcement_date": "June 22, 2023",
@@ -314,6 +427,7 @@
         {
             "name": "Larry Elder",
             "slug": "larry-elder",
+            "withdrawn": true,
             "party": "Republican",
             "current_position": "Talk Radio Host",
             "announcement_date": "April 20, 2023",
@@ -363,6 +477,7 @@
         {
             "name": "Ryan Binkley",
             "slug": "ryan-binkley",
+            "withdrawn": false,
             "party": "Republican",
             "current_position": "Businessman and Pastor",
             "announcement_date": "4/23/23",
@@ -417,6 +532,7 @@
         {
             "name": "Chris Christie",
             "slug": "chris-christie",
+            "withdrawn": false,
             "party": "Republican",
             "current_position": "Former Governor of New Jersey",
             "announcement_date": "June 6, 2023",
@@ -463,6 +579,7 @@
         {
             "name": "Cornel West",
             "slug": "cornel-west",
+            "withdrawn": false,
             "party": "Green",
             "current_position": "Philosopher/Political Activist/Social critic",
             "announcement_date": "June 5, 2023",
@@ -516,8 +633,60 @@
             }
         },
         {
+            "name": "Perry Johnson",
+            "slug": "perry-johnson",
+            "withdrawn": true,
+            "party": "Republican",
+            "current_position": "Businessman and Author",
+            "announcement_date": "March 2, 2023",
+            "past_roles": [
+                {
+                    "role": "Businessman and Author",
+                    "start_year": "N/A",
+                    "end_year": "N/A"
+                }
+            ],
+            "quote": "I'm a guy that started with nothing, & ended up with the most perfect life on the planet. I lived the American dream, & I want to keep that American dream alive. To do that, obviously, we need to change things.",
+            "key_legislation_or_accomplishments": [
+                "N/A"
+            ],
+            "running_mate_2024": "N/A",
+            "key_policy_points": [
+                "Two-Cents Plan",
+                "Inflation",
+                "Energy",
+                "Border Security",
+                "Fentanyl Crisis",
+                "Social Security & Medicare",
+                "Simplifying the Tax Code",
+                "National Security",
+                "Education",
+                "Department of Justice & FBI"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "Individuals with a left-leaning perspective may strongly disagree with Perry Johnson's campaign, particularly on issues like border security and fiscal conservatism. They may argue that Johnson's focus on reducing government spending and implementing austerity measures might lead to cutbacks in social programs that many Americans rely on. Furthermore, they might consider his emphasis on \"pro-life, pro-second amendment\" values as exclusionary and not aligned with progressive social values. His approach to energy, particularly his support for fossil fuels, could also be viewed as an environmental concern. Overall, those on the left may believe that Johnson's policies lack empathy and adequate consideration for social justice and climate change.",
+                "centrist": "From a centrist perspective, Perry Johnson could be seen as someone who brings a pragmatic blend of policies to the table. His focus on fiscal responsibility, reducing the deficit, and controlling inflation could be interpreted as a balanced approach to economic stability. However, his willingness to continue using fossil fuels might be seen as a practical middle ground between rapid climate action and economic considerations. Centrists may appreciate that he acknowledges the challenges at the southern border, but they might hope that he pairs this with a humane immigration policy. Overall, centrists might see Johnson as someone who combines elements of both conservative and liberal policies, although some may question if he leans too far to the right to truly be considered centrist.",
+                "right_leaning": "Supporters from the right are likely to appreciate Perry Johnson's focus on traditional conservative values, such as limited government, strong national security, and personal freedoms. His \"Two Cents Plan\" and his goal to simplify the tax code would resonate well with those who prioritize fiscal conservatism. Additionally, his pro-life and pro-second amendment stances would likely garner strong support from social conservatives. His policies on border security and national debt may also appeal to those concerned about American sovereignty and fiscal health. Overall, his platform would probably be seen as a strong representation of conservative values and aims to restore what some on the right may consider \"common-sense governance.\""
+            },
+            "biography": {
+                "birth_year": "N/A",
+                "birth_place": "Dolton, Illinois",
+                "education": [
+                    "Bachelor's degree in mathematics from the University of Illinois at Urbana-Champaign"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
             "name": "Robert F. Kennedy Jr.",
             "slug": "robert-f-kennedy-jr",
+            "withdrawn": false,
             "party": "Independent",
             "current_position": "Author and Lawyer",
             "announcement_date": "April 5, 2023",
@@ -575,6 +744,7 @@
         {
             "name": "Joe Biden",
             "slug": "joe-biden",
+            "withdrawn": false,
             "party": "Democratic",
             "current_position": "46th president of the United States",
             "announcement_date": "April 25, 2023",
@@ -629,6 +799,7 @@
         {
             "name": "Donald Trump",
             "slug": "donald-trump",
+            "withdrawn": false,
             "party": "Republican",
             "current_position": "45th President of the United States",
             "election_date": "2024",

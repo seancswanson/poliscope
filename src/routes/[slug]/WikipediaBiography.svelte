@@ -17,7 +17,7 @@
 	});
 </script>
 
-<div class="border-[1.5px] border-black rounded text-center flex flex-col">
+<div class="border-[1.5px] border-black rounded text-center shadow-neo flex flex-col">
 	<h2 class="text-2xl bg-black text-white font-extrabold px-2">Who is {candidate.name}?</h2>
 	<div class="wiki-content p-4">
 		{@html wikipediaPageData}
