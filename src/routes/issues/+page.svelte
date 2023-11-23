@@ -1,5 +1,8 @@
-<h1 class="text-2xl mb-5 font-bold text-center">Key Issues for 2024</h1>
-<h2 class="text-center mb-2">
-	These are the key issues that will be discussed in the 2024 election:
+<h1 class="text-3xl mb-8 shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2">
+	Key Issues for 2024
+</h1>
+<h2
+	class="text-center mb-2 border-black border-[1.5px] text-sm rounded-lg py-2 tracking-wider uppercase"
+>
+	🚧 Under Construction
 </h2>
-<p class="italic text-center text-xs">Click an issue to learn more</p>

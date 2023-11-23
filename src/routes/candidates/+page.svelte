@@ -24,7 +24,6 @@
 		month: 'long',
 		day: 'numeric'
 	}).format(latestDataDate);
-	let filterVisible = false;
 </script>
 
 <section class="flex flex-col gap-4 mb-5">

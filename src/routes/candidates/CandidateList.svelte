@@ -65,8 +65,21 @@
 				<div class="party-select flex flex-col gap-2">
 					<span class="block font-medium text-sm">Party:</span>
 					<div class="flex flex-col">
-						{#each politicalParties as party}
-							<div class="flex gap-2">
+						<div class="flex gap-2">
+							<input
+								id="All"
+								type="radio"
+								class="form-radio h-5 w-5 text-gray-600"
+								name="party"
+								value="All"
+								checked={selectedParty === 'All'}
+								on:change={() => {
+									selectedParty = 'All';
+								}}
+							/>
+							<label for="All" class="">All</label>
+
+							{#each politicalParties as party}
 								<input
 									id={politicalParties.indexOf(party).toString()}
 									type="radio"
@@ -79,8 +92,8 @@
 									}}
 								/>
 								<label for={politicalParties.indexOf(party).toString()} class="">{party}</label>
-							</div>
-						{/each}
+							{/each}
+						</div>
 					</div>
 				</div>
 			</div>

@@ -2,7 +2,6 @@ function getSpecialWikipediaSlug(name) {
 	const specialNames = {
 		'Perry Johnson': 'Perry_Johnson_(businessman)',
 		'William Hurd': 'Will_Hurd'
-		// Add more special cases here
 	};
 	return specialNames[name] || null;
 }
