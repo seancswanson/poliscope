@@ -1,4 +1,5 @@
 <script>
+	import { getPartyAccentColorBorder } from '$lib/utils';
 	export let candidate;
 
 	const borderColor = getPartyAccentColorBorder(candidate.party);

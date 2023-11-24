@@ -5,25 +5,33 @@
 	import { quintOut } from 'svelte/easing';
 	let filterVisible = false;
 	let selectedParty = 'All';
-	const numberCandidates = {
-		all: candidates.candidates.length,
-		democratic: candidates.candidates.filter((candidate) => candidate.party === 'Democratic')
-			.length,
-		republican: candidates.candidates.filter((candidate) => candidate.party === 'Republican')
-			.length,
-		independent: candidates.candidates.filter((candidate) => candidate.party == 'Independent')
-			.length,
-		green: candidates.candidates.filter((candidate) => candidate.party === 'Green').length
-	};
-	let filteredCandidates = candidates.candidates;
+
+	function sortCandidatesByName(candidatesList: any[]) {
+		return candidatesList.sort((a, b) => {
+			const aLastName = a.name.split(' ').slice(-1)[0];
+			const bLastName = b.name.split(' ').slice(-1)[0];
+			return aLastName.localeCompare(bLastName);
+		});
+	}
+
+	let filteredCandidates = candidates.candidates
+		.filter((candidate) => candidate.withdrawn === false)
+		.sort((a, b) => {
+			const aLastName = a.name.split(' ').slice(-1)[0];
+			const bLastName = b.name.split(' ').slice(-1)[0];
+			return aLastName.localeCompare(bLastName);
+		});
+	let withdrawnCandidates = candidates.candidates.filter(
+		(candidate) => candidate.withdrawn === true
+	);
 
 	$: {
 		if (selectedParty !== 'All') {
-			filteredCandidates = candidates.candidates.filter(
-				(candidate) => candidate.party === selectedParty
+			filteredCandidates = sortCandidatesByName(
+				candidates.candidates.filter((candidate) => candidate.party === selectedParty)
 			);
 		} else {
-			filteredCandidates = candidates.candidates;
+			filteredCandidates = sortCandidatesByName(candidates.candidates);
 		}
 	}
 	const politicalParties = candidates.candidates
@@ -31,7 +39,8 @@
 		.filter((value, index, self) => self.indexOf(value) === index);
 </script>
 
-<div class="filter-bar flex justify-end mb-2">
+<div class="filter-bar flex justify-between mb-2">
+	<h2 class="font-bold">Currently Running</h2>
 	<button on:click={() => (filterVisible = true)} class={``}
 		><img
 			src="$lib/assets/filter.png"
@@ -100,8 +109,15 @@
 		</div>
 	</div>
 {/if}
-<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
 	{#each filteredCandidates as candidate (candidate.slug)}
+		{@const imgUrl = `/portraits/${candidate.slug}-square.webp`}
+		<CandidateCard {candidate} {imgUrl} />
+	{/each}
+</div>
+<h2 class="font-bold mb-4">Withdrawn</h2>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+	{#each withdrawnCandidates as candidate (candidate.slug)}
 		{@const imgUrl = `/portraits/${candidate.slug}-square.webp`}
 		<CandidateCard {candidate} {imgUrl} />
 	{/each}

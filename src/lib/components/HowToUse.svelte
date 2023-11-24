@@ -30,7 +30,9 @@
 </script>
 
 <div id="how-to-use-section">
-	<h3 class="text-3xl shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2 mb-6">
+	<h3
+		class="text-3xl bg-white shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2 mb-6"
+	>
 		How to Use Poliscope
 	</h3>
 	<div class="sm:grid sm:grid-cols-4 gap-4 mb-4 flex flex-col">
@@ -38,7 +40,7 @@
 			<button
 				class:active={selectedStep === key}
 				on:click={() => (selectedStep = key)}
-				class="relative sm:py-0 px-2 border-[1.5px] text-sm rounded hover:bg-gray-100 shadow-neo border-black hover:translate-y-[-2px] transition-all"
+				class="relative sm:py-0 px-2 border-[1.5px] text-sm rounded bg-white hover:bg-gray-100 shadow-neo border-black hover:translate-y-[-2px] transition-all"
 			>
 				{value.title}
 				<span
@@ -56,7 +58,7 @@
 
 <style>
 	.active {
-		background-color: #f3f4f6; /* Tailwind CSS gray-100 */
+		background-color: #f3f4f6;
 		font-weight: bold;
 	}
 </style>

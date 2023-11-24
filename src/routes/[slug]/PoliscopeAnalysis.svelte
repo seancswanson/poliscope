@@ -8,7 +8,7 @@
 	import link from '$lib/assets/link.png';
 </script>
 
-<div id="analysis-wrapper" class="border-black border-[1.5px] rounded shadow-neo">
+<div id="analysis-wrapper" class="border-black border-[1.5px] rounded shadow-neo bg-white">
 	<div id="analysis-header" class="mb-4 text-center flex gap-3 flex-col">
 		<div
 			id="analysis-title"
@@ -32,21 +32,35 @@
 				aria-controls="popover-content"><img src={question} alt="q" class="w-4 h-4" /></button
 			>
 		</div>
-		<h3>How Different Political Alignments Interpret the Candidate's Policy Stances</h3>
-		<a
-			class="text-xs italic flex gap-2 mx-auto flex-col sm:flex-row group"
-			href="https://www.pewresearch.org/politics/quiz/political-typology/"
-			alt="Political Quiz"
-		>
-			Where on the political spectrum do you identify?
-			<span class="underline font-semibold text-blue-600">
-				Take the quiz.<img
-					src={link}
-					alt="link"
-					class="w-4 h-4 ml-1 inline opacity-50 group-hover:opacity-100"
-				/></span
+		Where on the political spectrum do you identify? Take one of these quizzes.
+		<div class="flex justify-center gap-4">
+			<a
+				class="text-xs italic flex group"
+				href="https://www.pewresearch.org/politics/quiz/political-typology/"
+				alt="Political Quiz"
 			>
-		</a>
+				Shorter, less comprehensive<span class="underline font-semibold text-blue-600">
+					<img
+						src={link}
+						alt="link"
+						class="w-4 h-4 ml-1 inline opacity-50 group-hover:opacity-100"
+					/></span
+				>
+			</a>
+			<a
+				class="text-xs italic flex group"
+				href="https://www.isidewith.com/political-quiz"
+				alt="Political Quiz"
+			>
+				Longer, more comprehensive<span class="underline font-semibold text-blue-600">
+					<img
+						src={link}
+						alt="link"
+						class="w-4 h-4 ml-1 inline opacity-50 group-hover:opacity-100"
+					/></span
+				>
+			</a>
+		</div>
 	</div>
 	<div>
 		<div class="grid grid-rows-1 grid-cols-3">
@@ -106,7 +120,9 @@
 			>
 		</div>
 		<!-- Content Container -->
-		<div class="bg-white py-4 px-6 rounded border-0 border-t-[1.5px] rounded-t-none border-black">
+		<div
+			class="bg-white py-4 px-6 rounded border-0 border-t-[1.5px] rounded-t-none border-black font-light"
+		>
 			{#if selectedTab === 'left_leaning'}
 				<p transition:slide>
 					{candidate.policy_perspectives.left_leaning}

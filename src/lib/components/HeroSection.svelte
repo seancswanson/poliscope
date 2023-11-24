@@ -10,11 +10,13 @@
 	}
 </script>
 
-<div class="text-center font-extrabold flex flex-col gap-6 justify-evenly">
-	<h1 class="text-3xl shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2">
+<div class="text-center flex flex-col gap-6 justify-evenly">
+	<h1
+		class="text-3xl bg-white font-extrabold shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2"
+	>
 		Welcome to Poliscope!
 	</h1>
-	<h2 class="text-2xl sm:w-1/2 mx-auto">Your Guide to the 2024 U.S. Presidential Election</h2>
+	<h2 class="text-2xl sm:w-1/2 mx-auto">Your Handbook to the 2024 U.S. Presidential Election</h2>
 	<img
 		src={hero}
 		alt="Poliscope Election Guide Visualization"

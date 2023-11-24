@@ -22,9 +22,9 @@
                 "End the Drug War"
             ],
             "policy_perspectives": {
-                "left_leaning": "Focus on criminal justice reform, ending foreign wars, and ending the drug war.",
-                "centrist": "N/A",
-                "right_leaning": "N/A"
+                "left_leaning": "Left-leaning individuals might appreciate Chase Oliver's pro-choice stance on abortion, aligning with liberal values despite his opposition to taxpayer-funded abortions. His support for LGBTQ+ rights, including equal adoption rights for same-sex couples, resonates well with progressive ideologies. However, his endorsement of a free market solution to climate change might not suffice for those favoring direct government intervention. Additionally, Oliver's strong advocacy for gun rights, although inclusive, could clash with the left's typical stance favoring stricter gun control.",
+                "centrist": "Centrists might find Chase Oliver's political positions appealing in several areas. His support for ranked-choice voting aligns with a pragmatic approach to electoral reform, potentially improving the electoral system. Oliver's stance on ending qualified immunity for law enforcement suggests a balanced approach to police reform. His advocacy for an 'Ellis Island-style' immigration system could attract centrists looking for a moderate solution in immigration debates. However, his proposal to abolish the United States Department of Education, favoring state-by-state education solutions, might be seen as a practical yet divisive approach.",
+                "right_leaning": "Right-leaning individuals may resonate with several of Chase Oliver's libertarian stances. His robust support for gun rights aligns well with conservative values on self-defense and individual liberties. Oliver's libertarian philosophy emphasizes reduced government intervention, which is likely to appeal to those favoring small government approaches. His stance on ending the war on drugs and supporting the legalization of marijuana, though potentially contentious, reflects a freedom-oriented viewpoint. Additionally, his approach to homelessness, focusing on removing regulatory barriers to aid the homeless, might be viewed as a market-based solution appealing to conservative principles."
             },
             "biography": {
                 "birth_year": "1985",
@@ -39,6 +39,64 @@
                 "twitter": "N/A",
                 "instagram": "N/A",
                 "youtube": "N/A"
+            }
+        },
+        {
+            "name": "Dean Phillips",
+            "slug": "dean-phillips",
+            "withdrawn": false,
+            "party": "Democratic",
+            "current_position": "U.S. Representative for Minnesota",
+            "announcement_date": "October 26, 2023",
+            "past_roles": [
+                {
+                    "role": "President and CEO of Phillips Distilling Company",
+                    "start_year": 1993,
+                    "end_year": 2012
+                },
+                {
+                    "role": "Executive Chairman of Talenti Gelato",
+                    "start_year": 2012,
+                    "end_year": 2016
+                },
+                {
+                    "role": "Co-Founder of Penny's Coffee",
+                    "start_year": 2016,
+                    "end_year": "Present"
+                },
+                {
+                    "role": "U.S. Representative for Minnesota's 3rd Congressional District",
+                    "start_year": 2019,
+                    "end_year": "Present"
+                }
+            ],
+            "quote": "I didn’t set out to enter this race. But it looks like on our current course, the Democrats will lose and Trump will be our President again. ... This is a last-minute campaign, but desperate times call for desperate measures, and courage is an important value to me.",
+            "key_legislation_or_accomplishments": [],
+            "policy_perspectives": {
+                "left_leaning": "Left-leaning individuals might empathize with Dean Phillips's concerns regarding President Biden's age and the need for younger, more dynamic leadership, especially given the significant number of Democrats sharing these concerns. While Phillips's focus on healthcare reform, fiscal responsibility, and climate change aligns with progressive priorities, his moderate and pro-business stance might not fully resonate with the more progressive wing of the Democratic Party.",
+                "centrist": "Centrists may view Dean Phillips's candidacy favorably, appreciating his 'fiscally responsible, socially inclusive' approach that emphasizes bipartisan governance and pragmatic solutions. His criticism of non-competitive primaries and advocacy for new leadership could appeal to those disillusioned with partisan politics. Phillips's emphasis on campaign finance reform and creating bipartisan presidential Cabinets might be seen as positive steps toward reducing divisiveness in politics.",
+                "right_leaning": "Right-leaning voters might appreciate Dean Phillips's pro-business policies, viewing them as beneficial for economic growth and stability. His challenge to Biden and critique of current Democratic leadership could be seen as a welcome diversity of thought within the Democratic Party. Phillips's willingness to question the competency of leaders in his party, including Vice President Kamala Harris, may be interpreted as a sign of independence. However, his late entry into the race and decision to skip the Nevada primary might be viewed as strategic missteps."
+            },
+            "key_policy_points": [
+                "Bringing down the cost of living by being pro-worker and pro-business",
+                "Improving community safety by addressing mental health and drug issues",
+                "Investing in young people",
+                "Making politics less divisive with policies like term limits and campaign finance reform"
+            ],
+            "biography": {
+                "birth_year": 1969,
+                "birth_place": "St. Paul, Minnesota",
+                "education": [
+                    "Bachelor's degree from Brown University",
+                    "Master's degree in business from the University of Minnesota"
+                ]
+            },
+            "social_media": {
+                "website": "Not specified",
+                "facebook": "Not specified",
+                "twitter": "Not specified",
+                "instagram": "Not specified",
+                "youtube": "Not specified"
             }
         },
         {
@@ -321,57 +379,6 @@
             }
         },
         {
-            "name": "Perry Johnson",
-            "slug": "perry-johnson",
-            "withdrawn": false,
-            "party": "Republican",
-            "current_position": "Businessman and Author",
-            "announcement_date": "March 2, 2023",
-            "past_roles": [
-                {
-                    "role": "Businessman and Author",
-                    "start_year": "N/A",
-                    "end_year": "N/A"
-                }
-            ],
-            "quote": "I'm a guy that started with nothing, & ended up with the most perfect life on the planet. I lived the American dream, & I want to keep that American dream alive. To do that, obviously, we need to change things.",
-            "key_legislation_or_accomplishments": [
-                "N/A"
-            ],
-            "running_mate_2024": "N/A",
-            "key_policy_points": [
-                "Two-Cents Plan",
-                "Inflation",
-                "Energy",
-                "Border Security",
-                "Fentanyl Crisis",
-                "Social Security & Medicare",
-                "Simplifying the Tax Code",
-                "National Security",
-                "Education",
-                "Department of Justice & FBI"
-            ],
-            "policy_perspectives": {
-                "left_leaning": "Individuals with a left-leaning perspective may strongly disagree with Perry Johnson's campaign, particularly on issues like border security and fiscal conservatism. They may argue that Johnson's focus on reducing government spending and implementing austerity measures might lead to cutbacks in social programs that many Americans rely on. Furthermore, they might consider his emphasis on \"pro-life, pro-second amendment\" values as exclusionary and not aligned with progressive social values. His approach to energy, particularly his support for fossil fuels, could also be viewed as an environmental concern. Overall, those on the left may believe that Johnson's policies lack empathy and adequate consideration for social justice and climate change.",
-                "centrist": "From a centrist perspective, Perry Johnson could be seen as someone who brings a pragmatic blend of policies to the table. His focus on fiscal responsibility, reducing the deficit, and controlling inflation could be interpreted as a balanced approach to economic stability. However, his willingness to continue using fossil fuels might be seen as a practical middle ground between rapid climate action and economic considerations. Centrists may appreciate that he acknowledges the challenges at the southern border, but they might hope that he pairs this with a humane immigration policy. Overall, centrists might see Johnson as someone who combines elements of both conservative and liberal policies, although some may question if he leans too far to the right to truly be considered centrist.",
-                "right_leaning": "Supporters from the right are likely to appreciate Perry Johnson's focus on traditional conservative values, such as limited government, strong national security, and personal freedoms. His \"Two Cents Plan\" and his goal to simplify the tax code would resonate well with those who prioritize fiscal conservatism. Additionally, his pro-life and pro-second amendment stances would likely garner strong support from social conservatives. His policies on border security and national debt may also appeal to those concerned about American sovereignty and fiscal health. Overall, his platform would probably be seen as a strong representation of conservative values and aims to restore what some on the right may consider \"common-sense governance.\""
-            },
-            "biography": {
-                "birth_year": "N/A",
-                "birth_place": "Dolton, Illinois",
-                "education": [
-                    "Bachelor's degree in mathematics from the University of Illinois at Urbana-Champaign"
-                ]
-            },
-            "social_media": {
-                "website": "N/A",
-                "facebook": "N/A",
-                "twitter": "N/A",
-                "instagram": "N/A",
-                "youtube": "N/A"
-            }
-        },
-        {
             "name": "William Hurd",
             "slug": "william-hurd",
             "withdrawn": true,
@@ -612,9 +619,9 @@
                 "American pragmatism"
             ],
             "policy_perspectives": {
-                "left_leaning": "West's academic focus and activism around issues of race, class, and justice place him firmly within the progressive sphere. His association with democratic socialism underscores his left-leaning policies.",
-                "centrist": "West's philosophical orientation, informed by the tradition of American pragmatism, could appeal to those in the center who prioritize practical solutions over ideological purity.",
-                "right_leaning": "West's career has largely been in the academic and activist circles traditionally associated with left-leaning ideologies, making it challenging to identify policies that would align him with a right-leaning perspective."
+                "left_leaning": "Cornel West, as a self-identified socialist, aligns closely with several key priorities of the left. His campaign's emphasis on Medicare for All, public housing, and action on climate change resonates with progressive values. Additionally, his stance on drastically cutting the U.S. military budget and supporting policies like the Green New Deal might be particularly appealing to left-leaning voters seeking bold reforms and a strong focus on social justice and environmental issues​​.",
+                "centrist": "Centrists might view West's candidacy with mixed feelings. While his support for campaign finance reform and voting rights aligns with broader democratic principles, his more radical proposals, like universal public housing and a significant reduction in military spending, might be seen as too extreme. Centrists often seek balanced, moderate solutions and may find West's approach too far removed from mainstream Democratic policies. However, his agreement with Biden on certain issues like climate change action and access to preschool and child care might find some resonance among centrist voters​​.",
+                "right_leaning": "Right-leaning voters are likely to find West's political positions largely at odds with their views. His socialist stances, such as support for Medicare for All and the Green New Deal, along with his opposition to new oil drilling, are in direct conflict with conservative economic and energy policies. Additionally, his criticism of U.S. foreign aid and military policy, along with his perspective that the Democratic Party does not 'deserve anybody's vote,' places him firmly outside the typical right-leaning ideological sphere. His potential impact on reducing both Biden's and Trump's support in the general election might be of interest, highlighting his role as a potential spoiler in the electoral process​​."
             },
             "biography": {
                 "birth_year": 1953,
@@ -720,9 +727,9 @@
                 "Restore rights and liberties as outlined in the Bill of Rights"
             ],
             "policy_perspectives": {
-                "left_leaning": "Kennedy's focus on environmental concerns, social reconciliation, and economic inequality aligns him with progressive values.",
-                "centrist": "Kennedy aims to curb lobbying and protect whistleblowers, which can be seen as non-partisan issues aimed at improving government functionality.",
-                "right_leaning": "Kennedy's criticism of former President Donald Trump's handling of the coronavirus lockdown may resonate with some conservatives who also opposed the lockdowns."
+                "left_leaning": "Left-leaning individuals might find Kennedy's advocacy for certain liberal policies appealing, such as his support for small and medium businesses and his criticism of corporate power in the U.S. political economy. However, his stance on a national ban on abortion after the first trimester and opposition to nationalizing the pharmaceutical industry may not align with more progressive views. His controversial claims regarding vaccines and COVID-19, along with his conspiracy theories, are likely to be a significant point of contention for left-leaning voters​​.",
+                "centrist": "Centrists may appreciate Kennedy's call for ending 'the corrupt merger of state and corporate power' and his foreign policy stance focused on reducing military interventions. However, his position on gun control, being a constitutional absolutist, might resonate with those seeking a balance between Second Amendment rights and public safety. Centrists might also find his varied political views, ranging from liberal to conservative and libertarian, as an opportunity for a more diverse political discourse, but his involvement in conspiracy theories could be a major concern​​.",
+                "right_leaning": "Right-leaning individuals might find common ground with Kennedy on issues like gun rights and opposition to a Medicare for All system. His criticism of the Democratic Party as 'the party of war' and his advocacy for a single-payer healthcare system that allows private options could appeal to conservatives seeking alternatives to mainstream Republican policies. However, his controversial statements on vaccines, COVID-19, and other conspiracy theories might be divisive even among right-leaning voters. The support he has received from certain Republicans and his criticism of state and corporate power might also be of interest​​."
             },
             "biography": {
                 "birth_year": 1954,
@@ -797,6 +804,56 @@
             }
         },
         {
+            "name": "Mike Pence",
+            "slug": "mike-pence",
+            "withdrawn": true,
+            "party": "Republican",
+            "current_position": "Former Vice President of the United States",
+            "announcement_date": "June 5, 2023",
+            "past_roles": [
+                {
+                    "role": "Governor of Indiana",
+                    "start_year": 2013,
+                    "end_year": 2017
+                },
+                {
+                    "role": "Representative in the U.S. House of Representatives",
+                    "start_year": 2001,
+                    "end_year": 2013
+                }
+            ],
+            "quote": "I know we can bring this country back. We can defend our Nation and secure our border. We can revive our economy. We can put our Nation back on a path to a balanced federal budget. We can defend our liberties and give America a new beginning for life.",
+            "key_legislation_or_accomplishments": [],
+            "key_policy_points": [
+                "Reduce federal spending and combat inflation",
+                "Achieve American energy independence and dominance",
+                "Restore power to states and local jurisdictions",
+                "Reinstate the Remain in Mexico policy and secure the border",
+                "Ensure U.S. military dominance and rebuild the Navy",
+                "Protect traditional family values and oppose abortion"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "Mike Pence's 2024 presidential campaign is concerning from a progressive standpoint due to his staunch conservative stances, particularly on social issues. His strong anti-abortion stance, including support for a constitutional amendment to enshrine the right to life, directly opposes the left's advocacy for reproductive rights. Pence's policies on energy, which focus heavily on fossil fuels and energy independence, are seen as a step back from necessary climate change action. His emphasis on traditional family values and opposition to gender reassignment procedures may be viewed as a regression in the fight for LGBTQ+ rights. Furthermore, his plans to reduce federal spending and limit government intervention are at odds with the left's call for more government involvement in social programs and healthcare.",
+                "centrist": "From a centrist viewpoint, Mike Pence presents a mixed bag as a 2024 presidential candidate. His experience as vice president and a long-time public servant give him a deep understanding of the political landscape. His focus on fiscal responsibility and reducing government debt could appeal to moderate voters who prioritize economic stability. However, his hardline stances on social issues like abortion and LGBTQ+ rights might not resonate with centrists who prefer more moderate or progressive social policies. His energy policies, while promoting American independence and economic growth, might lack the balance centrists seek in addressing environmental concerns. Pence’s stance on border security and immigration, including the reinstatement of the Remain in Mexico policy, might appeal to centrists concerned with national security, though his approach could be seen as too stringent.",
+                "right_leaning": "For right-leaning individuals, Mike Pence's candidacy in the 2024 presidential race is highly favorable. His conservative track record, especially his vice-presidency under Donald Trump, aligns well with the right's values. His strong stance on issues like abortion, religious freedom, and traditional family values resonates deeply with the conservative base. Pence's commitment to American energy dominance and his criticism of the Biden administration's energy policies align with right-leaning priorities for economic growth and national independence. His focus on border security and strict immigration policies, including the completion of the border wall, are key issues for the right. Additionally, his approach to federalism, advocating for states' rights and reducing federal government overreach, is a fundamental conservative principle. Pence's fiscal conservatism, aiming to reduce government spending and debt, is also a critical point for right-leaning voters."
+            },
+            "biography": {
+                "birth_year": 1959,
+                "birth_place": "Columbus, Indiana",
+                "education": [
+                    "Bachelor's degree in history from Hanover College",
+                    "J.D. from Indiana University School of Law"
+                ]
+            },
+            "social_media": {
+                "website": "",
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "youtube": ""
+            }
+        },
+        {
             "name": "Donald Trump",
             "slug": "donald-trump",
             "withdrawn": false,
@@ -868,7 +925,61 @@
                 "instagram": "Not specified",
                 "youtube": "Not specified"
             }
+        },
+        {
+            "name": "Tim Scott",
+            "slug": "tim-scott",
+            "withdrawn": true,
+            "party": "Republican",
+            "current_position": "U.S. Senator from South Carolina",
+            "announcement_date": "May 22, 2023",
+            "past_roles": [
+                {
+                    "role": "U.S. Senator from South Carolina",
+                    "start_year": 2013,
+                    "end_year": 2023
+                },
+                {
+                    "role": "U.S. Representative for South Carolina's 1st Congressional District",
+                    "start_year": 2011,
+                    "end_year": 2013
+                },
+                {
+                    "role": "Charleston County City Council",
+                    "start_year": 1995,
+                    "end_year": 2008
+                }
+            ],
+            "quote": "I rose from a child of poverty to a candidate for president of the United States because we chose patriotism over pity and to be victors, not victims. Made in America. That's my story. That's why it pains my soul to see the Biden liberals attacking every rung of the ladder that helped me climb.",
+            "key_legislation_or_accomplishments": [],
+            "key_policy_points": [
+                "Border Security",
+                "Education",
+                "Conservative Values and Rights",
+                "National Security",
+                "Law and Order",
+                "Economic Opportunity and Growth"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "From a left-leaning viewpoint, Tim Scott's candidacy for the 2024 Presidential election may raise concerns due to his conservative stances on various issues. Critics on the left often view his strong emphasis on border security, including the construction of a border wall and stringent immigration policies, as lacking compassion and inclusivity. His opposition to what he terms as 'indoctrination' in education, particularly regarding gender and sexual identity topics, is seen as a step back in the progress of LGBTQ+ rights and diversity education. Scott's staunch pro-life stance and his efforts to uphold religious liberties are perceived as potentially infringing upon women's reproductive rights and the separation of church and state. His economic policies, focusing on tax cuts and reduced government spending, may be criticized for favoring the wealthy and corporations over the working class and the economically disadvantaged.",
+                "centrist": "Centrists might view Tim Scott's candidacy as a blend of traditional conservative values with a pragmatic approach to governance. His story of personal triumph, rising from poverty to a position of influence, is likely to resonate as an embodiment of the American Dream. Centrists may appreciate his focus on law and order and support for law enforcement, seeing it as a necessary response to rising crime rates, though they might seek a more balanced approach that also addresses issues of police reform and racial justice. His economic agenda, emphasizing job creation and a Made in America approach, could appeal to those who prioritize economic stability and national self-reliance. However, centrists might be wary of his hardline stances on social issues and seek more moderate positions that accommodate a wider range of viewpoints.",
+                "right_leaning": "From a right-leaning perspective, Tim Scott represents a strong conservative choice for the 2024 Presidential election. His commitment to border security and tough stance on illegal immigration align well with right-wing priorities of national sovereignty and law and order. Scott's advocacy for educational reform, particularly his opposition to critical race theory in schools, aligns with the conservative view of preserving traditional American values in education. His economic policies, which include tax cuts and reducing national debt, are likely to be well-received by those who advocate for smaller government and fiscal responsibility. Furthermore, his pro-life stance and emphasis on religious freedoms resonate deeply with conservative voters. Scott's narrative of personal success and self-reliance is seen as inspirational and a testament to conservative values of hard work and individualism."
+            },
+            "biography": {
+                "birth_year": 1965,
+                "birth_place": "North Charleston, South Carolina",
+                "education": [
+                    "Charleston Southern University, Bachelor’s degree in Political Science"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
         }
     ],
-    "latest_data_date": "2023-11-12T00:00:00.000Z"
+    "latest_data_date": "2023-11-25T00:00:00.000Z"
 }

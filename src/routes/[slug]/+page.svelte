@@ -3,12 +3,19 @@
 	import CandidateQuickFacts from './CandidateQuickFacts.svelte';
 	import PoliscopeAnalysis from './PoliscopeAnalysis.svelte';
 	import WikipediaBiography from './WikipediaBiography.svelte';
-
+	import link from '$lib/assets/link.png';
 	/** @type {import('./$types').PageData} */
 	export let data;
 
 	const candidate = data.candidate;
 	const wikipediaPageData = data.wikipediaPageData;
+
+	function searchCandidateInfo(query) {
+		const baseUrl = 'https://www.google.com/search?q=';
+		const candidateName = candidate.name.replace(/\s+/g, '+');
+		const fullQuery = `${baseUrl}${query}+${candidateName}`;
+		window.open(fullQuery, '_blank');
+	}
 </script>
 
 {#if candidate.name}
@@ -28,28 +35,58 @@
 	</section>
 
 	<!-- Biography -->
-	<section class="mb-6">
+	<section class="mb-8">
 		<WikipediaBiography {wikipediaPageData} {candidate} />
 	</section>
 
-	<!-- Social Media Links -->
-	<section
-		class="mb-6 shadow-neo border-[1.5px] border-black rounded p-2 flex flex-col justify-center items-center"
-	>
-		<h2 class="font-[600] text-2xl mb-3">Connect with {candidate.name}</h2>
-		<ul class="flex gap-4">
-			{#each Object.entries(candidate.social_media) as [platform, link]}
-				{#if link}
-					{@const portraitImgUrl = `/social/${platform}.png`}
+	<section class="flex flex-col justify-center items-center">
+		<h2 class="font-[600] text-2xl mb-3">Learn More About {candidate.name}</h2>
+		<p class="italic text-center text-xs mb-2">
+			These links open a Google search query in a new tab for further research.
+		</p>
 
-					<li class="shadow-sm px-2 mb-2">
-						<a href={link} class="text-blue-600 hover:underline flex items-center gap-2">
-							<img src={portraitImgUrl} alt={`${platform} logo`} class="w-8 h-8" />
-						</a>
-					</li>
-				{/if}
-			{/each}
-		</ul>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+			<button
+				class="shadow-neo border-black border-[1.5px] px-4 py-2 items-center justify-center rounded bg-white hover:translate-y-[-2px] hover:bg-gray-100 transition flex gap-2 group"
+				on:click={() => searchCandidateInfo('key+political+positions')}
+			>
+				Key Political Positions <img
+					src={link}
+					alt="link"
+					class="w-[12px] h-[12px] inline opacity-50 group-hover:opacity-100"
+				/>
+			</button>
+			<button
+				class="shadow-neo border-black border-[1.5px] px-4 py-2 items-center justify-center rounded bg-white hover:translate-y-[-2px] hover:bg-gray-100 transition flex gap-2 group"
+				on:click={() => searchCandidateInfo('voting+record+and+legislative+history')}
+			>
+				Voting Record and Legislative History <img
+					src={link}
+					alt="link"
+					class="w-[12px] h-[12px] inline opacity-50 group-hover:opacity-100"
+				/>
+			</button>
+			<button
+				class="shadow-neo border-black border-[1.5px] px-4 py-2 items-center justify-center rounded bg-white hover:translate-y-[-2px] hover:bg-gray-100 transition flex gap-2 group"
+				on:click={() => searchCandidateInfo('major+criticisms+and+controversies')}
+			>
+				Major Criticisms and Controversies <img
+					src={link}
+					alt="link"
+					class="w-[12px] h-[12px] inline opacity-50 group-hover:opacity-100"
+				/>
+			</button>
+			<button
+				class="shadow-neo border-black border-[1.5px] px-4 py-2 items-center justify-center rounded bg-white hover:translate-y-[-2px] hover:bg-gray-100 transition flex gap-2 group"
+				on:click={() => searchCandidateInfo('campaign+endorsements')}
+			>
+				Endorsements <img
+					src={link}
+					alt="link"
+					class="w-[12px] h-[12px] inline opacity-50 group-hover:opacity-100"
+				/>
+			</button>
+		</div>
 	</section>
 {:else}
 	<div>Loading...</div>

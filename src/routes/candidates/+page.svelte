@@ -6,6 +6,10 @@
 
 	import candidates from '$lib/data/candidates.json';
 
+	let runningCandidates = candidates.candidates.filter(
+		(candidate) => candidate.withdrawn === false
+	);
+
 	let uniqueParties = [
 		...new Set(candidates.candidates.map((candidate) => candidate.party))
 	].sort();
@@ -13,13 +17,14 @@
 	let parties = uniqueParties.map((party) => {
 		return {
 			party: party,
-			count: candidates.candidates.filter((candidate) => candidate.party === party).length
+			count: runningCandidates.filter((candidate) => candidate.party === party).length
 		};
 	});
 
-	const numberParties = candidates.candidates
+	const numberParties = runningCandidates
 		.map((candidate) => candidate.party)
 		.filter((value, index, self) => self.indexOf(value) === index).length;
+
 	const latestDataDate = new Date(candidates.latest_data_date);
 	const formattedDate = new Intl.DateTimeFormat('en-US', {
 		year: 'numeric',
@@ -29,7 +34,7 @@
 </script>
 
 <section class="flex flex-col gap-4 mb-5">
-	<h1 class="text-3xl shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2">
+	<h1 class="text-3xl shadow-neo border-[1.5px] bg-white border-black rounded w-fit mx-auto px-2">
 		2024 Presidential Candidates
 	</h1>
 	<img src={candidatesHeroImg} class="mx-auto w-2/5" alt="" />
@@ -39,8 +44,8 @@
 		</p>
 		<p class="text-center w-3/4 mx-auto">
 			There are
-			<span class="font-semibold">{candidates.candidates.length}</span> people in the race for
-			President across <span class="font-bold">{numberParties}</span> parties:
+			<span class="font-semibold">{runningCandidates.length}</span> people in the race for President
+			across <span class="font-bold">{numberParties}</span> parties:
 		</p>
 	</div>
 	<div class="candidate-number-pills flex gap-2 justify-center">
@@ -48,23 +53,8 @@
 			<PartyInfoPill party={party.party} count={party.count} />
 		{/each}
 	</div>
+	<p class="italic text-center text-xs mb-2">Click on a candidate below to learn more</p>
 </section>
 <section>
-	<p class="italic text-center text-xs mb-2">Click on a candidate below to learn more</p>
 	<CandidateList />
 </section>
-
-<style>
-	.popover {
-		z-index: 997;
-	}
-
-	.backdrop {
-		width: 100vw;
-		height: 100vh;
-		position: fixed;
-		inset: 0;
-
-		background: rgba(0, 0, 0, 0.7);
-	}
-</style>

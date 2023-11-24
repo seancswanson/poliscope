@@ -3,7 +3,7 @@
 	import swansongLogo from '$lib/assets/swansong-logo.png';
 </script>
 
-<footer class="bg-gray-800 text-white px-4 py-8">
+<footer class="bg-gray-800 text-white px-4 py-8 mt-24">
 	<div
 		class="container mx-auto flex flex-col sm:flex-row justify-around items-center sm:items-start gap-4"
 	>

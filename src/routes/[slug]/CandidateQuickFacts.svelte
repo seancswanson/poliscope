@@ -16,7 +16,7 @@
 
 <div class="flex flex-col h-full gap-3">
 	<div class="top-row flex gap-2 justify-between">
-		<div class="border border-black rounded text-center flex flex-col grow">
+		<div class="border border-black rounded text-center flex flex-col grow bg-white">
 			<span class="bg-black text-white font-extrabold px-4">Party</span>
 			<a
 				href={partyHomePage[candidate.party]}
@@ -33,13 +33,13 @@
 				<img src={partyImgUrl} alt={`${candidate.party} symbol`} class="m-auto w-16" />
 			</a>
 		</div>
-		<div class="w-20 border border-black rounded text-center flex flex-col grow">
+		<div class="w-20 border border-black rounded text-center flex flex-col grow bg-white">
 			<span class="bg-black text-white font-extrabold">Age</span>
 			<span class="m-auto text-2xl font-light"
 				>≈{new Date().getFullYear() - candidate.biography.birth_year}
 			</span>
 		</div>
-		<div class="border border-black rounded text-center flex flex-col grow">
+		<div class="border border-black rounded text-center flex flex-col grow bg-white">
 			<span class="bg-black text-white font-extrabold px-2">Birthplace</span>
 			<a
 				target="_blank"
@@ -51,10 +51,10 @@
 		</div>
 	</div>
 	{#if candidate.quote !== 'N/A'}
-		<div class="border border-black rounded text-center flex flex-col">
+		<div class="border border-black rounded text-center flex flex-col bg-white">
 			<span class="bg-black text-white font-extrabold">Featured Quote</span>
 			<div>
-				<blockquote class="italic border-l-4 p-2">
+				<blockquote class="italic border-l-4 p-2 font-light">
 					"{candidate.quote}"
 				</blockquote>
 			</div>

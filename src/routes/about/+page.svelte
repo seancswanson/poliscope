@@ -1,17 +1,25 @@
-<h1 class="text-3xl mb-8 shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2">
+<script>
+	import about from '$lib/assets/issues.png';
+</script>
+
+<h1
+	class="text-3xl mb-8 bg-white shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2"
+>
 	About Poliscope
 </h1>
 <div class="flex flex-col gap-4">
+	<img src={about} alt="" class="w-1/2 sm:w-2/5 mx-auto" />
 	<div class="border border-black shadow-neo rounded text-center flex flex-col grow">
-		<h2 class="border-b-black border-b font-extrabold py-2">Purpose</h2>
-		<span class="m-auto p-4 font-light">
-			This web app was created with the intention of helping voters make informed decisions in the
-			2024 election.
+		<h2 class="border-b-black border-b rounded-t bg-white font-extrabold py-2">Purpose</h2>
+		<span class="m-auto p-4 font-light bg-white rounded-b">
+			To help voters make an informed decision in the 2024 election by consolidating public
+			information about presidential candidates and using generative AI to present their policies
+			from all sides.
 		</span>
 	</div>
 	<div class="border shadow-neo border-black rounded text-center">
-		<h2 class="border-b-black border-b font-extrabold py-2">Data Sources</h2>
-		<div class="flex flex-col gap-4 font-light p-4">
+		<h2 class="border-b-black border-b font-extrabold py-2 rounded-t bg-white">Data Sources</h2>
+		<div class="flex flex-col gap-4 font-light p-4 bg-white rounded-b">
 			<span class="m-auto">
 				<strong>Candidate Quick Facts:</strong> The text from each candidate's Ballotpedia entry was
 				fed into ChatGPT with specific instructions to summarize and parse the content as close to the
@@ -32,8 +40,10 @@
 		</div>
 	</div>
 	<div class="border border-black shadow-neo rounded text-center flex flex-col">
-		<h2 class="border-b-black border-b font-extrabold py-2">Data Transparency & Contributing</h2>
-		<div class="flex flex-col gap-4 p-4">
+		<h2 class="border-b-black border-b font-extrabold py-2 rounded-t bg-white">
+			Data Transparency & Contributing
+		</h2>
+		<div class="flex flex-col gap-4 p-4 bg-white rounded-b">
 			<span class="m-auto font-light">
 				Do you have an idea for a feature or want to see more data? I'd love to hear from you!
 			</span>

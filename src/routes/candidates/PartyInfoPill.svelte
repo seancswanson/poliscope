@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class={`flex gap-2 font-['AuthenticSansCondensed'] rounded-full border-2 ${accentStyles} px-2 shadow-neo`}
+	class={`flex gap-2 font-['AuthenticSansCondensed'] rounded-full bg-white border-2 ${accentStyles} px-2 shadow-neo`}
 >
 	<div class="number">{count}</div>
 	<div class="label">{party}</div>

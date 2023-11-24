@@ -7,7 +7,7 @@
 <section class="mb-12">
 	<HeroSection />
 </section>
-<hr class="mb-8" />
+<div class="border-b border-gray-300 mb-8" />
 <section class="mb-8">
 	<div id="learn" class="teaser flex text-xl flex-col gap-8 text-center pt-4 p-4 px-4">
 		<p class="text-4xl font-extrabold">Listen... 👂</p>
@@ -20,11 +20,11 @@
 		</p>
 	</div>
 </section>
-<hr class="mb-8" />
+<div class="border-b border-gray-300 mb-8" />
 <section class="mb-8">
 	<Features />
 </section>
-<hr class="mb-8" />
+<div class="border-b border-gray-300 mb-8" />
 <section>
 	<HowToUse />
 </section>

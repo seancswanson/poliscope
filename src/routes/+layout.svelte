@@ -12,7 +12,7 @@
 	$: pathname = data.pathname;
 </script>
 
-<div class="page-wrapper h-full grid grid-rows-[auto,auto,1fr,auto]">
+<div class="page-wrapper min-h-screen h-full grid grid-rows-[auto,auto,1fr,auto]">
 	<Header />
 	{#key pathname}
 		<main
