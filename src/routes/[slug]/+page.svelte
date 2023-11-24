@@ -15,10 +15,10 @@
 	<a
 		href="/candidates"
 		id="back-btn"
-		class="flex w-fit px-4 text-blue-600 hover:underline mb-4 shadow-neo bg-white border-[1.5px] border-black rounded"
+		class="flex w-fit px-4 text-blue-600 hover:bg-blue-500 transition-all hover:translate-y-[-2px] hover:text-white mb-4 shadow-neo bg-white border-[1.5px] border-black rounded"
 		>← Back to candidates</a
 	>
-	<section class="flex gap-4 flex-col sm:flex-row mb-4">
+	<section class="flex gap-4 flex-col mb-4">
 		<PageCandidateCard {candidate} />
 		<CandidateQuickFacts {candidate} />
 	</section>

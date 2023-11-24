@@ -6,7 +6,9 @@
 
 	import candidates from '$lib/data/candidates.json';
 
-	let uniqueParties = [...new Set(candidates.candidates.map((candidate) => candidate.party))];
+	let uniqueParties = [
+		...new Set(candidates.candidates.map((candidate) => candidate.party))
+	].sort();
 
 	let parties = uniqueParties.map((party) => {
 		return {
@@ -43,7 +45,7 @@
 	</div>
 	<div class="candidate-number-pills flex gap-2 justify-center">
 		{#each parties as party}
-			<PartyInfoPill {party} />
+			<PartyInfoPill party={party.party} count={party.count} />
 		{/each}
 	</div>
 </section>
