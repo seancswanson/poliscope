@@ -20,12 +20,12 @@
 
 {#if candidate.name}
 	<a
-		href="/candidates"
+		href="/poliscope/candidates"
 		id="back-btn"
 		class="flex w-fit px-4 text-blue-600 hover:bg-blue-500 transition-all hover:translate-y-[-2px] hover:text-white mb-4 shadow-neo bg-white border-[1.5px] border-black rounded"
 		>← Back to candidates</a
 	>
-	<section class="flex flex-col mb-4 gap-4">
+	<section class="flex flex-col gap-4 mb-4">
 		<PageCandidateCard {candidate} />
 		<CandidateQuickFacts {candidate} />
 	</section>
@@ -45,7 +45,7 @@
 			These links open a Google search query in a new tab for further research.
 		</p>
 
-		<div class="text-sm grid grid-cols-1 sm:grid-cols-2 gap-4">
+		<div class="grid grid-cols-1 gap-4 text-sm sm:grid-cols-2">
 			<button
 				class="shadow-neo border-black border-[1.5px] px-4 py-2 items-center justify-center rounded bg-white hover:translate-y-[-2px] hover:bg-gray-100 transition flex gap-2 group"
 				on:click={() => searchCandidateInfo('key+political+positions')}

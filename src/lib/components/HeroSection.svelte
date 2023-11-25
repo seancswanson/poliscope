@@ -10,7 +10,7 @@
 	}
 </script>
 
-<div class="flex flex-col text-center gap-6 justify-evenly">
+<div class="flex flex-col gap-6 text-center justify-evenly">
 	<h1
 		class="text-2xl sm:text-3xl bg-white font-extrabold shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2"
 	>
@@ -22,12 +22,9 @@
 		alt="Poliscope Election Guide Visualization"
 		class="w-3/4 mx-auto max-w-[400px]"
 	/>
-	<div
-		class="flex flex-col w-3/4 mx-auto text-sm buttons items-center
- sm:flex-row gap-4"
-	>
+	<div class="flex flex-col items-center w-3/4 gap-4 mx-auto text-sm buttons sm:flex-row">
 		<a
-			href="/candidates"
+			href="candidates"
 			class="flex-1 bg-green-400 gap-2 rounded-full border-2 border-slate-600 px-4 shadow-neo p-3 hover:translate-y-[-2px] transition-all"
 			>Explore Candidates</a
 		>

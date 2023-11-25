@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/poliscope/(.*)",
+            "destination": "/$1"
+        }
+    ]
+}

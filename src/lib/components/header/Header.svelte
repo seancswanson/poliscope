@@ -11,15 +11,15 @@
 	const navItems = [
 		{
 			label: 'Candidates',
-			path: '/candidates'
+			path: 'candidates'
 		},
 		{
 			label: "'24 Issues",
-			path: '/issues'
+			path: 'issues'
 		},
 		{
 			label: 'About',
-			path: '/about'
+			path: 'about'
 		}
 	];
 	const endDate = new Date('November 5, 2024 00:00:00').getTime();

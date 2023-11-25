@@ -7,7 +7,7 @@
 </script>
 
 <a
-	href={`/${candidate.slug}`}
+	href={`/poliscope/candidates/${candidate.slug}`}
 	class="bg-white hover:translate-y-[-4px] ease-in-out transition-transform flex flex-col justify-center items-center text-center cursor-pointer candidate p-4 border-[1.5px] border-black shadow-neo rounded relative"
 >
 	<div
