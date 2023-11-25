@@ -18,13 +18,13 @@
 </script>
 
 <div class="border-[1.5px] border-black rounded text-center shadow-neo flex flex-col bg-white">
-	<h2 class="text-2xl bg-black text-white font-extrabold px-2">Who is {candidate.name}?</h2>
-	<div class="wiki-content p-4 font-light">
+	<h2 class="px-2 text-2xl font-extrabold text-white bg-black">Who is {candidate.name}?</h2>
+	<div class="p-4 font-light wiki-content">
 		{@html wikipediaPageData}
 	</div>
 	<a
 		href="https://simple.wikipedia.org/wiki/Main_Page"
-		class="italic text-center text-xs mb-2 group"
+		class="mb-2 text-xs italic text-center group"
 		>Info courtesy of Wikipedia <img
 			src={link}
 			alt="link"

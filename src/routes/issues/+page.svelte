@@ -3,7 +3,7 @@
 >
 	Key Issues for 2024
 </h1>
-<div class="text-center flex flex-col gap-2 rounded-lg">
+<div class="flex flex-col text-center rounded-lg gap-2">
 	<span class="text-4xl">🚧 🚧 🚧</span>
-	<h2 class=" tracking-wider font-bold uppercase">Under Construction</h2>
+	<h2 class="font-bold tracking-wider uppercase ">Under Construction</h2>
 </div>

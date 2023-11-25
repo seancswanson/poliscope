@@ -34,26 +34,28 @@
 </script>
 
 <section class="flex flex-col gap-4 mb-5">
-	<h1 class="text-3xl shadow-neo border-[1.5px] bg-white border-black rounded w-fit mx-auto px-2">
+	<h1
+		class="text-2xl sm:text-3xl shadow-neo border-[1.5px] bg-white border-black rounded w-fit mx-auto px-2"
+	>
 		2024 Presidential Candidates
 	</h1>
-	<img src={candidatesHeroImg} class="mx-auto w-2/5" alt="" />
+	<img src={candidatesHeroImg} class="w-2/5 mx-auto" alt="" />
 	<div class="text">
-		<p class="text-center w-3/4 mx-auto">
+		<p class="w-3/4 mx-auto text-center">
 			As of <span class="font-semibold">{formattedDate}*</span>-
 		</p>
-		<p class="text-center w-3/4 mx-auto">
+		<p class="w-3/4 mx-auto text-center">
 			There are
 			<span class="font-semibold">{runningCandidates.length}</span> people in the race for President
 			across <span class="font-bold">{numberParties}</span> parties:
 		</p>
 	</div>
-	<div class="candidate-number-pills flex gap-2 justify-center">
+	<div class="flex flex-wrap justify-center w-4/5 gap-2 mx-auto sm:w-1/2 candidate-number-pills">
 		{#each parties as party}
 			<PartyInfoPill party={party.party} count={party.count} />
 		{/each}
 	</div>
-	<p class="italic text-center text-xs mb-2">Click on a candidate below to learn more</p>
+	<p class="mb-2 text-xs italic text-center">Click on a candidate below to learn more</p>
 </section>
 <section>
 	<CandidateList />

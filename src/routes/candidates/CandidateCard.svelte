@@ -14,11 +14,11 @@
 		class={`corner-tag rounded-tr-[2px] absolute top-0 right-0 w-0 h-0 border-t-[0] border-t-transparent border-r-[45px] ${borderColor} border-b-[45px] border-b-transparent`}
 	/>
 
-	<div class="absolute top-1 text-sm font-bold right-2 text-white">
+	<div class="absolute text-sm font-bold text-white top-1 right-2">
 		{candidate.party[0]}
 	</div>
 	<img
-		class="w-24 h-24 rounded-sm mb-2 border border-slate-200"
+		class="w-24 h-24 mb-2 border rounded-sm border-slate-200"
 		src={imgUrl}
 		alt={candidate.name}
 	/>

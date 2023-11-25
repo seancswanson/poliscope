@@ -15,14 +15,14 @@
 </script>
 
 <div class="flex flex-col h-full gap-3">
-	<div class="top-row flex gap-2 justify-between">
-		<div class="border border-black rounded text-center flex flex-col grow bg-white">
-			<span class="bg-black text-white font-extrabold px-4">Party</span>
+	<div class="flex justify-between top-row gap-2">
+		<div class="flex flex-col text-center bg-white border border-black rounded grow">
+			<span class="px-4 font-extrabold text-white bg-black">Party</span>
 			<a
 				href={partyHomePage[candidate.party]}
-				class="flex-col gap-2 pb-2 flex justify-between group"
+				class="flex flex-col justify-between pb-2 gap-2 group"
 			>
-				<span class="px-2 py-1 font-light italic text-xs tracking-tighter bg-slate-200"
+				<span class="px-2 py-1 text-xs italic font-light tracking-tighter bg-slate-200"
 					>{[candidate.party]}
 					<img
 						src={link}
@@ -30,31 +30,31 @@
 						class="w-[12px] h-[12px] inline opacity-50 group-hover:opacity-100"
 					/></span
 				>
-				<img src={partyImgUrl} alt={`${candidate.party} symbol`} class="m-auto w-16" />
+				<img src={partyImgUrl} alt={`${candidate.party} symbol`} class="w-16 m-auto" />
 			</a>
 		</div>
-		<div class="w-20 border border-black rounded text-center flex flex-col grow bg-white">
-			<span class="bg-black text-white font-extrabold">Age</span>
+		<div class="flex flex-col w-20 text-center bg-white border border-black rounded grow">
+			<span class="font-extrabold text-white bg-black">Age</span>
 			<span class="m-auto text-2xl font-light"
 				>≈{new Date().getFullYear() - candidate.biography.birth_year}
 			</span>
 		</div>
-		<div class="border border-black rounded text-center flex flex-col grow bg-white">
-			<span class="bg-black text-white font-extrabold px-2">Birthplace</span>
+		<div class="flex flex-col text-center bg-white border border-black rounded grow">
+			<span class="px-2 font-extrabold text-white bg-black">Birthplace</span>
 			<a
 				target="_blank"
 				href={`https://www.google.com/maps?q=${candidate.biography.birth_place}`}
-				class="text-xl h-full m-auto font-light flex items-center px-2 gap-2 group"
+				class="flex items-center h-full px-2 m-auto text-xl font-light gap-2 group"
 				><span class="inline-block">{candidate.biography.birth_place}</span>
-				<img src={location} alt="q" class="group-hover:opacity-100 opacity-50 w-6 h-6" />
+				<img src={location} alt="q" class="w-6 h-6 opacity-50 group-hover:opacity-100" />
 			</a>
 		</div>
 	</div>
 	{#if candidate.quote !== 'N/A'}
-		<div class="border border-black rounded text-center flex flex-col bg-white">
-			<span class="bg-black text-white font-extrabold">Featured Quote</span>
+		<div class="flex flex-col text-center bg-white border border-black rounded">
+			<span class="font-extrabold text-white bg-black">Featured Quote</span>
 			<div>
-				<blockquote class="italic border-l-4 p-2 font-light">
+				<blockquote class="p-2 italic font-light border-l-4">
 					"{candidate.quote}"
 				</blockquote>
 			</div>

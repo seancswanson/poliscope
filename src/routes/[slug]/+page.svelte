@@ -25,7 +25,7 @@
 		class="flex w-fit px-4 text-blue-600 hover:bg-blue-500 transition-all hover:translate-y-[-2px] hover:text-white mb-4 shadow-neo bg-white border-[1.5px] border-black rounded"
 		>← Back to candidates</a
 	>
-	<section class="flex gap-4 flex-col mb-4">
+	<section class="flex flex-col mb-4 gap-4">
 		<PageCandidateCard {candidate} />
 		<CandidateQuickFacts {candidate} />
 	</section>
@@ -39,13 +39,13 @@
 		<WikipediaBiography {wikipediaPageData} {candidate} />
 	</section>
 
-	<section class="flex flex-col justify-center items-center">
+	<section class="flex flex-col items-center justify-center">
 		<h2 class="font-[600] text-2xl mb-3">Learn More About {candidate.name}</h2>
-		<p class="italic text-center text-xs mb-2">
+		<p class="mb-2 text-xs italic text-center">
 			These links open a Google search query in a new tab for further research.
 		</p>
 
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+		<div class="text-sm grid grid-cols-1 sm:grid-cols-2 gap-4">
 			<button
 				class="shadow-neo border-black border-[1.5px] px-4 py-2 items-center justify-center rounded bg-white hover:translate-y-[-2px] hover:bg-gray-100 transition flex gap-2 group"
 				on:click={() => searchCandidateInfo('key+political+positions')}

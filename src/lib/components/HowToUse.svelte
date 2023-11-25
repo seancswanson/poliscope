@@ -6,7 +6,7 @@
 			step: 1,
 			title: 'Select a Candidate',
 			description:
-				'Navigate to our <a href="/candidates" class="underline text-blue-600">candidates</a> page and choose who you want to know more about.'
+				'Navigate to our <a href="/candidates" class="text-blue-600 underline">candidates</a> page and choose who you want to know more about.'
 		},
 		read: {
 			step: 2,
@@ -18,7 +18,7 @@
 			step: 3,
 			title: 'Learn About Issues',
 			description:
-				'Head over to the <a href="/issues" class="underline text-blue-600">issues</a> page to understand the core issues affecting this election.'
+				'Head over to the <a href="/issues" class="text-blue-600 underline">issues</a> page to understand the core issues affecting this election.'
 		},
 		decide: {
 			step: 4,
@@ -31,11 +31,11 @@
 
 <div id="how-to-use-section">
 	<h3
-		class="text-3xl bg-white shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2 mb-6"
+		class="text-2xl sm:text-3xl bg-white shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2 mb-6"
 	>
 		How to Use Poliscope
 	</h3>
-	<div class="sm:grid sm:grid-cols-4 gap-4 mb-4 flex flex-col">
+	<div class="flex flex-col mb-4 sm:grid sm:grid-cols-4 gap-4">
 		{#each Object.entries(steps) as [key, value], index}
 			<button
 				class:active={selectedStep === key}

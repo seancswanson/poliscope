@@ -10,21 +10,21 @@
 	}
 </script>
 
-<div class="text-center flex flex-col gap-6 justify-evenly">
+<div class="flex flex-col text-center gap-6 justify-evenly">
 	<h1
-		class="text-3xl bg-white font-extrabold shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2"
+		class="text-2xl sm:text-3xl bg-white font-extrabold shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2"
 	>
 		Welcome to Poliscope!
 	</h1>
-	<h2 class="text-2xl sm:w-1/2 mx-auto">Your Handbook to the 2024 U.S. Presidential Election</h2>
+	<h2 class="mx-auto text-2xl sm:w-1/2">Your Handbook to the 2024 U.S. Presidential Election</h2>
 	<img
 		src={hero}
 		alt="Poliscope Election Guide Visualization"
 		class="w-3/4 mx-auto max-w-[400px]"
 	/>
 	<div
-		class="buttons items-center
- flex flex-col sm:flex-row w-3/4 mx-auto gap-4 text-sm"
+		class="flex flex-col w-3/4 mx-auto text-sm buttons items-center
+ sm:flex-row gap-4"
 	>
 		<a
 			href="/candidates"
@@ -38,7 +38,7 @@
 			>Learn More <img
 				src={info}
 				alt="q"
-				class="w-4 h-4 ml-2 inline opacity-75 group-hover:opacity-100"
+				class="inline w-4 h-4 ml-2 opacity-75 group-hover:opacity-100"
 			/></a
 		>
 	</div>

@@ -17,7 +17,7 @@
 	<div
 		class={`corner-tag absolute rounded-tr-[2px] top-0 right-0 w-0 h-0 border-t-[0] border-t-transparent border-r-[50px] ${borderColor} border-b-[50px] border-b-transparent`}
 	/>
-	<div class="absolute top-1 font-bold right-2 text-white">
+	<div class="absolute font-bold text-white top-1 right-2">
 		{candidate.party[0]}
 	</div>
 </div>

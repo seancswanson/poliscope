@@ -9,12 +9,12 @@
 </script>
 
 <div id="analysis-wrapper" class="border-black border-[1.5px] rounded shadow-neo bg-white">
-	<div id="analysis-header" class="mb-4 text-center flex gap-3 flex-col">
+	<div id="analysis-header" class="flex flex-col gap-3 mb-4 text-center">
 		<div
 			id="analysis-title"
 			class="flex p-2 analysis-gradient border-b-[1.5px] border-0 border-black gap-2 mx-auto w-full items-center justify-center"
 		>
-			<h2 class="font-bold text-2xl shrink-0">Poliscope Analysis</h2>
+			<h2 class="text-2xl font-bold shrink-0">Poliscope Analysis</h2>
 			<button
 				class="shrink-0"
 				on:click={() => (showPopover = !showPopover)}
@@ -35,35 +35,35 @@
 		Where on the political spectrum do you identify? Take one of these quizzes.
 		<div class="flex justify-center gap-4">
 			<a
-				class="text-xs italic flex group"
+				class="flex text-xs italic group"
 				href="https://www.pewresearch.org/politics/quiz/political-typology/"
 				alt="Political Quiz"
 			>
-				Shorter, less comprehensive<span class="underline font-semibold text-blue-600">
+				Shorter, less comprehensive<span class="font-semibold text-blue-600 underline">
 					<img
 						src={link}
 						alt="link"
-						class="w-4 h-4 ml-1 inline opacity-50 group-hover:opacity-100"
+						class="inline w-4 h-4 ml-1 opacity-50 group-hover:opacity-100"
 					/></span
 				>
 			</a>
 			<a
-				class="text-xs italic flex group"
+				class="flex text-xs italic group"
 				href="https://www.isidewith.com/political-quiz"
 				alt="Political Quiz"
 			>
-				Longer, more comprehensive<span class="underline font-semibold text-blue-600">
+				Longer, more comprehensive<span class="font-semibold text-blue-600 underline">
 					<img
 						src={link}
 						alt="link"
-						class="w-4 h-4 ml-1 inline opacity-50 group-hover:opacity-100"
+						class="inline w-4 h-4 ml-1 opacity-50 group-hover:opacity-100"
 					/></span
 				>
 			</a>
 		</div>
 	</div>
 	<div>
-		<div class="grid grid-rows-1 grid-cols-3">
+		<div class="grid grid-cols-3 grid-rows-1">
 			<button
 				on:click={() => {
 					selectedTab = 'left_leaning';
@@ -158,11 +158,10 @@
 		}}
 		role="button"
 	>
-		<!-- This div is your content box -->
 		<div
 			class="flex flex-col shadow-neo border-[1.5px] border-black gap-2 rounded py-4 px-6 relative overflow-scroll h-1/2 w-3/4 max-w-[500px] bg-white"
 		>
-			<p class="font-bold text-lg">How Were These Policy Perspectives Generated?</p>
+			<p class="text-lg font-bold">How Were These Policy Perspectives Generated?</p>
 			<p class="mb-4">
 				These policy perspectives are a unique blend of data-driven insights and advanced language
 				processing algorithms. We started by sourcing comprehensive data about each candidate from

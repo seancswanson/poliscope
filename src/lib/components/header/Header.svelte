@@ -28,7 +28,7 @@
 	let days = Math.floor(t / (1000 * 60 * 60 * 24));
 </script>
 
-<div class="countdown bg-slate-700 text-white">
+<div class="text-white countdown bg-slate-700">
 	<div
 		class="inner max-w-[600px] mx-auto flex items-center justify-center gap-2 py-1 px-4 uppercase tracking-wide"
 	>
@@ -38,7 +38,7 @@
 </div>
 <header class="border-[1.5px] border-l-0 border-r-0 border-black sticky top-0 bg-white z-50">
 	<div class="inner max-w-[768px] mx-auto flex items-center justify-between py-2 px-4">
-		<a href="/" class="logo flex items-center gap-2">
+		<a href="/" class="flex items-center gap-2 logo">
 			<img src={logo} alt="Poliscope Logo" width="50" height="50" />
 			<div id="app-name" class="text-2xl font-bold">Poliscope</div>
 		</a>
@@ -58,7 +58,9 @@
 			aria-label={navExpanded ? 'Close navigation menu' : 'Open navigation menu'}
 		>
 			<!-- Render hamburger icon or close icon based on navExpanded -->
-			{@html navExpanded ? '×' : `<img src=${hamburger} alt="Open navigation menu" />`}
+			{@html navExpanded
+				? '<span class="text-3xl">×</span>'
+				: `<img src=${hamburger} alt="Open navigation menu" />`}
 		</button>
 	</div>
 	{#if navExpanded}

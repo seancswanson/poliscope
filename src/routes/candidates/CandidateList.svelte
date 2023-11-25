@@ -39,7 +39,7 @@
 		.filter((value, index, self) => self.indexOf(value) === index);
 </script>
 
-<div class="filter-bar flex justify-between mb-2">
+<div class="flex justify-between mb-2 filter-bar">
 	<h2 class="font-bold">Currently Running</h2>
 	<button on:click={() => (filterVisible = true)} class={``}
 		><img
@@ -56,7 +56,7 @@
 		aria-orientation="vertical"
 		transition:fade
 		on:click|stopPropagation
-		class="popover relative"
+		class="relative popover"
 	>
 		<div
 			class="backdrop"
@@ -65,42 +65,46 @@
 			transition:fade={{ delay: 25, duration: 150, easing: quintOut }}
 		/>
 		<div
-			class="wrapper rounded border border-black absolute shadow-neo top-0 right-0 flex flex-col items-start bg-white text-black"
+			class="absolute top-0 right-0 flex flex-col items-start text-black bg-white border border-black rounded shadow-neo"
 		>
-			<div class="top-bar py-1 uppercase rounded-t w-full text-center bg-gray-300">
+			<div class="w-full py-1 text-center uppercase bg-gray-300 rounded-t top-bar">
 				Filter Options
 			</div>
 			<div class="content min-w-[250px] mx-auto p-2 flex flex-col gap-2">
-				<div class="party-select flex flex-col gap-2">
-					<span class="block font-medium text-sm">Party:</span>
+				<div class="flex flex-col gap-2 party-select">
+					<span class="block text-sm font-medium">Party:</span>
 					<div class="flex flex-col">
-						<div class="flex gap-2">
-							<input
-								id="All"
-								type="radio"
-								class="form-radio h-5 w-5 text-gray-600"
-								name="party"
-								value="All"
-								checked={selectedParty === 'All'}
-								on:change={() => {
-									selectedParty = 'All';
-								}}
-							/>
-							<label for="All" class="">All</label>
-
-							{#each politicalParties as party}
+						<div class="flex flex-col gap-2">
+							<div class="flex gap-2 party-select">
 								<input
-									id={politicalParties.indexOf(party).toString()}
+									id="All"
 									type="radio"
-									class="form-radio h-5 w-5 text-gray-600"
+									class="w-5 h-5 text-gray-600 form-radio"
 									name="party"
-									value={party}
-									checked={selectedParty === party}
+									value="All"
+									checked={selectedParty === 'All'}
 									on:change={() => {
-										selectedParty = party;
+										selectedParty = 'All';
 									}}
 								/>
-								<label for={politicalParties.indexOf(party).toString()} class="">{party}</label>
+								<label for="All" class="">All</label>
+							</div>
+
+							{#each politicalParties as party}
+								<div class="flex gap-2 party-select">
+									<input
+										id={politicalParties.indexOf(party).toString()}
+										type="radio"
+										class="w-5 h-5 text-gray-600 form-radio"
+										name="party"
+										value={party}
+										checked={selectedParty === party}
+										on:change={() => {
+											selectedParty = party;
+										}}
+									/>
+									<label for={politicalParties.indexOf(party).toString()} class="">{party}</label>
+								</div>
 							{/each}
 						</div>
 					</div>
@@ -109,14 +113,14 @@
 		</div>
 	</div>
 {/if}
-<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+<div class="grid grid-cols-2 gap-4 mb-8 lg:grid-cols-3">
 	{#each filteredCandidates as candidate (candidate.slug)}
 		{@const imgUrl = `/portraits/${candidate.slug}-square.webp`}
 		<CandidateCard {candidate} {imgUrl} />
 	{/each}
 </div>
-<h2 class="font-bold mb-4">Withdrawn</h2>
-<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+<h2 class="mb-4 font-bold">Withdrawn</h2>
+<div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
 	{#each withdrawnCandidates as candidate (candidate.slug)}
 		{@const imgUrl = `/portraits/${candidate.slug}-square.webp`}
 		<CandidateCard {candidate} {imgUrl} />
