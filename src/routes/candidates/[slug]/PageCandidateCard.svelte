@@ -13,7 +13,11 @@
 	<h1 class="text-4xl font-extrabold">{candidate.name}</h1>
 	<span class="text-lg">{candidate.current_position}</span>
 	<!-- Portrait -->
-	<img class="w-48 mx-auto border-[1.5px] border-black" src={portraitImgUrl} alt={candidate.name} />
+	<img
+		class="w-48 mx-auto border-[1.5px] border-black rounded-sm"
+		src={portraitImgUrl}
+		alt={candidate.name}
+	/>
 	<div
 		class={`corner-tag absolute rounded-tr-[2px] top-0 right-0 w-0 h-0 border-t-[0] border-t-transparent border-r-[50px] ${borderColor} border-b-[50px] border-b-transparent`}
 	/>

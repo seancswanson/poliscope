@@ -17,15 +17,15 @@ export const getPartyAccentColorBorderShadow = (party: string) => {
 export const getPartyAccentColorBorder = (party: string) => {
 	switch (party) {
 		case 'Democratic':
-			return 'border-r-blue-300';
+			return 'border-r-blue-400';
 		case 'Republican':
-			return 'border-r-red-300';
+			return 'border-r-red-400';
 		case 'Green':
-			return 'border-r-green-300';
+			return 'border-r-green-400';
 		case 'Libertarian':
-			return 'border-r-yellow-300';
+			return 'border-r-yellow-400';
 		case 'Independent':
-			return 'border-r-gray-300';
+			return 'border-r-gray-400';
 		default:
 	}
 };

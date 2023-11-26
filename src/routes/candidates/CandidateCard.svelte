@@ -7,7 +7,7 @@
 </script>
 
 <a
-	href={`/${candidate.slug}`}
+	href={`/candidates/${candidate.slug}`}
 	class="bg-white hover:translate-y-[-4px] ease-in-out transition-transform flex flex-col justify-center items-center text-center cursor-pointer candidate p-4 border-[1.5px] border-black shadow-neo rounded relative"
 >
 	<div
@@ -17,11 +17,7 @@
 	<div class="absolute text-sm font-bold text-white top-1 right-2">
 		{candidate.party[0]}
 	</div>
-	<img
-		class="w-24 h-24 mb-2 border rounded-sm border-slate-200"
-		src={imgUrl}
-		alt={candidate.name}
-	/>
+	<img class="w-24 h-24 mb-2 border border-black rounded-sm" src={imgUrl} alt={candidate.name} />
 	<h2 class="text-xl font-medium">{candidate.name}</h2>
 	<p class="text-xs">{candidate.current_position}</p>
 </a>

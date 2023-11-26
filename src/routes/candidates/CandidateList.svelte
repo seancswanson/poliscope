@@ -3,8 +3,29 @@
 	import candidates from '$lib/data/candidates.json';
 	import { fade } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+
+	const sortedCandidates = sortCandidatesByName(candidates.candidates);
+
+	const politicalParties = sortedCandidates
+		.map((candidate) => candidate.party)
+		.filter((value, index, self) => self.indexOf(value) === index);
+
+	const runningCandidates = sortedCandidates.filter((candidate) => candidate.withdrawn === false);
+	const withdrawnCandidates = sortedCandidates.filter((candidate) => candidate.withdrawn === true);
+
+	let filteredCandidates: typeof sortedCandidates;
 	let filterVisible = false;
 	let selectedParty = 'All';
+
+	$: {
+		if (selectedParty !== 'All') {
+			filteredCandidates = sortCandidatesByName(
+				runningCandidates.filter((candidate) => candidate.party === selectedParty)
+			);
+		} else {
+			filteredCandidates = runningCandidates;
+		}
+	}
 
 	function sortCandidatesByName(candidatesList: any[]) {
 		return candidatesList.sort((a, b) => {
@@ -13,30 +34,6 @@
 			return aLastName.localeCompare(bLastName);
 		});
 	}
-
-	let filteredCandidates = candidates.candidates
-		.filter((candidate) => candidate.withdrawn === false)
-		.sort((a, b) => {
-			const aLastName = a.name.split(' ').slice(-1)[0];
-			const bLastName = b.name.split(' ').slice(-1)[0];
-			return aLastName.localeCompare(bLastName);
-		});
-	let withdrawnCandidates = candidates.candidates.filter(
-		(candidate) => candidate.withdrawn === true
-	);
-
-	$: {
-		if (selectedParty !== 'All') {
-			filteredCandidates = sortCandidatesByName(
-				candidates.candidates.filter((candidate) => candidate.party === selectedParty)
-			);
-		} else {
-			filteredCandidates = sortCandidatesByName(candidates.candidates);
-		}
-	}
-	const politicalParties = candidates.candidates
-		.map((candidate) => candidate.party)
-		.filter((value, index, self) => self.indexOf(value) === index);
 </script>
 
 <div class="flex justify-between mb-2 filter-bar">
