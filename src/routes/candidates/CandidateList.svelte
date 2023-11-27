@@ -38,8 +38,12 @@
 
 <div class="flex justify-between mb-2 filter-bar">
 	<h2 class="font-bold">Currently Running</h2>
-	<button on:click={() => (filterVisible = true)} class={``}
+	<button
+		on:click={() => (filterVisible = true)}
+		on:keydown={() => (filterVisible = true)}
+		class={``}
 		><img
+			alt="filter icon"
 			src="$lib/assets/filter.png"
 			class={`border-black border-[1.5px] hover:translate-y-[-2px]  rounded-sm transition-all ease-in-out shadow-neo w-8 p-1`}
 		/></button
@@ -47,18 +51,21 @@
 </div>
 {#if filterVisible}
 	<div
+		tabindex="0"
 		role="button"
 		aria-labelledby="Title"
 		aria-describedby="Description"
-		aria-orientation="vertical"
 		transition:fade
 		on:click|stopPropagation
+		on:keydown|stopPropagation
 		class="relative popover"
 	>
 		<div
 			class="backdrop"
+			tabindex="0"
 			role="button"
 			on:click|stopPropagation={() => (filterVisible = false)}
+			on:keydown|stopPropagation={() => (filterVisible = false)}
 			transition:fade={{ delay: 25, duration: 150, easing: quintOut }}
 		/>
 		<div

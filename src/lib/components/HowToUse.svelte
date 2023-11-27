@@ -29,13 +29,13 @@
 	};
 </script>
 
-<div id="how-to-use-section">
+<div class="flex flex-col gap-4">
 	<h3
 		class="text-2xl sm:text-3xl bg-white shadow-neo border-[1.5px] border-black rounded w-fit mx-auto px-2 mb-6"
 	>
 		How to Use Poliscope
 	</h3>
-	<div class="flex flex-col mb-4 sm:grid sm:grid-cols-4 gap-4">
+	<div class="flex flex-col gap-4 mb-4 sm:grid sm:grid-cols-4">
 		{#each Object.entries(steps) as [key, value], index}
 			<button
 				class:active={selectedStep === key}

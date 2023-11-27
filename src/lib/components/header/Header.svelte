@@ -1,12 +1,9 @@
 <script>
+	import { onMount, onDestroy } from 'svelte';
 	import { page } from '$app/stores';
+
 	import logo from '$lib/assets/logo.png';
 	import hamburger from '$lib/assets/hamburger.png';
-	let navExpanded = false;
-
-	function toggleNav() {
-		navExpanded = !navExpanded;
-	}
 
 	const navItems = [
 		{
@@ -22,10 +19,34 @@
 			path: '/about'
 		}
 	];
+
 	const endDate = new Date('November 5, 2024 00:00:00').getTime();
-	let now = new Date().getTime();
-	let t = endDate - now;
-	let days = Math.floor(t / (1000 * 60 * 60 * 24));
+	let now;
+	let days;
+
+	let navExpanded = false;
+
+	function toggleNav() {
+		navExpanded = !navExpanded;
+	}
+
+	function updateCountdown() {
+		now = new Date().getTime();
+		let t = endDate - now;
+		days = Math.floor(t / (1000 * 60 * 60 * 24));
+	}
+
+	onMount(() => {
+		updateCountdown();
+		const msUntilNextDay = 86400000 - (now % 86400000);
+		const timeout = setTimeout(() => {
+			updateCountdown();
+			setInterval(updateCountdown, 86400000);
+		}, msUntilNextDay);
+		return () => {
+			clearTimeout(timeout); // Clear the timeout and interval when the component is destroyed
+		};
+	});
 </script>
 
 <div class="text-white countdown bg-slate-700">
@@ -33,7 +54,7 @@
 		class="inner max-w-[600px] mx-auto flex items-center justify-center gap-2 py-1 px-4 uppercase tracking-wide"
 	>
 		<div class="text-xs">Countdown to Election Day:</div>
-		<div class="text-xs">{days} days</div>
+		<div class="text-xs">{days ? days : '000'} days</div>
 	</div>
 </div>
 <header class="border-[1.5px] border-l-0 border-r-0 border-black sticky top-0 bg-white z-50">
