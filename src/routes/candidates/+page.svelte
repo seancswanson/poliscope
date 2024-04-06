@@ -1,5 +1,5 @@
 <script lang="ts">
-	import CandidateList from './CandidateList.svelte';
+	import CandidateList from './CandidateListWrapper.svelte';
 
 	import candidatesHeroImg from '$lib/assets/candidates.png';
 	import PartyInfoPill from './PartyInfoPill.svelte';
