@@ -3,7 +3,15 @@
 >
 	Key Issues for 2024
 </h1>
-<div class="flex flex-col text-center rounded-lg gap-2">
-	<span class="text-4xl">🚧 🚧 🚧</span>
-	<h2 class="font-bold tracking-wider uppercase ">Under Construction</h2>
+<div class="flex flex-col justify-between gap-6 text-center rounded-lg">
+	<h2>
+		Explore the issues below presented by the neutral, digital political encyclopedia:
+		<a href="https://ballotpedia.com" class="underline">Ballotpedia</a>
+	</h2>
+
+	<iframe
+		src="https://ballotpedia.org/Presidential_candidates_on_the_issues,_2024"
+		frameborder="0"
+		class="h-[80vh] shadow-neo rounded"
+	/>
 </div>
