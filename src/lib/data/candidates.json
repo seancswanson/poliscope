@@ -3,7 +3,7 @@
         {
             "name": "Chase Oliver",
             "slug": "chase-oliver",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Libertarian",
             "current_position": "Import Shipping Business Professional",
             "announcement_date": "May 25, 2024",
@@ -44,7 +44,7 @@
         {
             "name": "Dean Phillips",
             "slug": "dean-phillips",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Democratic",
             "current_position": "U.S. Representative for Minnesota",
             "announcement_date": "October 26, 2023",
@@ -143,7 +143,7 @@
         {
             "name": "Jill Stein",
             "slug": "jill-stein",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Green",
             "current_position": "Physician, Organizer, Environmental-Health Advocate",
             "announcement_date": "November 9, 2023",
@@ -210,7 +210,7 @@
         {
             "name": "Doug Burgum",
             "slug": "doug-burgum",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Republican",
             "current_position": "Governor of North Dakota",
             "announcement_date": "2023-06-07",
@@ -265,7 +265,7 @@
         {
             "name": "Ron DeSantis",
             "slug": "ron-desantis",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Republican",
             "current_position": "Governor of Florida",
             "announcement_date": "May 24, 2023",
@@ -319,7 +319,7 @@
         {
             "name": "Asa Hutchinson",
             "slug": "asa-hutchinson",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Republican",
             "current_position": "Running for President of the United States",
             "announcement_date": "April 2, 2023",
@@ -484,7 +484,7 @@
         {
             "name": "Ryan Binkley",
             "slug": "ryan-binkley",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Republican",
             "current_position": "Businessman and Pastor",
             "announcement_date": "4/23/23",
@@ -539,7 +539,7 @@
         {
             "name": "Chris Christie",
             "slug": "chris-christie",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Republican",
             "current_position": "Former Governor of New Jersey",
             "announcement_date": "June 6, 2023",
@@ -586,7 +586,7 @@
         {
             "name": "Cornel West",
             "slug": "cornel-west",
-            "withdrawn": false,
+            "withdrawn": true,
             "party": "Green",
             "current_position": "Philosopher/Political Activist/Social critic",
             "announcement_date": "June 5, 2023",
@@ -680,6 +680,57 @@
                 "birth_place": "Dolton, Illinois",
                 "education": [
                     "Bachelor's degree in mathematics from the University of Illinois at Urbana-Champaign"
+                ]
+            },
+            "social_media": {
+                "website": "N/A",
+                "facebook": "N/A",
+                "twitter": "N/A",
+                "instagram": "N/A",
+                "youtube": "N/A"
+            }
+        },
+        {
+            "name": "Nikki Haley",
+            "slug": "nikki-haley",
+            "withdrawn": true,
+            "party": "Republican",
+            "current_position": "Former U.N. Ambassador",
+            "announcement_date": "February 14, 2023",
+            "withdrawal_date": "March 6, 2024",
+            "past_roles": [
+                {
+                    "role": "U.N. Ambassador",
+                    "start_year": 2017,
+                    "end_year": 2018
+                },
+                {
+                    "role": "Governor of South Carolina",
+                    "start_year": 2011,
+                    "end_year": 2017
+                },
+                {
+                    "role": "South Carolina House of Representatives",
+                    "start_year": 2005,
+                    "end_year": 2010
+                }
+            ],
+            "quote": "Republicans have lost the popular vote in seven out of the last eight presidential elections. That has to change. Joe Biden's record is abysmal, but that shouldn't come as a surprise. The Washington establishment has failed us over and over and over again. It's time for a new generation of leadership to rediscover fiscal responsibility, secure our border, and strengthen our country, our pride, and our purpose.",
+            "key_policy_points": [
+                "Fiscal responsibility",
+                "Secure borders",
+                "Strengthen the country"
+            ],
+            "policy_perspectives": {
+                "left_leaning": "Haley's emphasis on fiscal responsibility and border security may not align with typical left-leaning priorities, which often focus on social welfare and more open immigration policies. Her call for new leadership could resonate with those critical of the status quo across the political spectrum.",
+                "centrist": "Centrists might appreciate Haley's call for fiscal responsibility and her moderate stance on some issues, given her willingness to engage with international partners and her focus on pragmatic solutions rather than ideological purity.",
+                "right_leaning": "Right-leaning individuals are likely to support Haley's focus on fiscal conservatism, strong national defense, and strict immigration policies. Her record as Governor and U.N. Ambassador may reinforce her appeal to conservatives seeking experienced leadership."
+            },
+            "biography": {
+                "birth_year": 1972,
+                "birth_place": "Bamberg, South Carolina",
+                "education": [
+                    "B.S. in accounting from Clemson University"
                 ]
             },
             "social_media": {
